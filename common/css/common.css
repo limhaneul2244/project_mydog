@@ -148,7 +148,7 @@ a:visited{
 	display: inline-block;
 	width: 181px;
 	height: 73px;
-	background-image: url(/images/mydog_logo.PNG);
+	background-image: url(../images/mydog_logo.PNG);
 }
 
 
@@ -267,7 +267,7 @@ a:visited{
 	height: 32px;
 	background-position: 0,0;
 	background-repeat: no-repeat;
-	background-image: url(/images/footer_logo.png);
+	background-image: url(../images/footer_logo.png);
 	background-color: #fff;
 }
 .footer_inner>.footer_logo>.footer_logo_icon>span {

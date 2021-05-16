@@ -51,8 +51,8 @@
 }
 #main_notice {
     width: 1280px;
-    height: 70px;
-    line-height: 70px;
+    height: 60px;
+    line-height: 60px;
     margin: 10px auto;
     border: 3px solid rgb(185, 185, 185);
 }
@@ -60,13 +60,13 @@
 #main_notice>div>a {}
 #main_notice>div>a>.notice_txt {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
-/*-----------------------#mydog_infor-----------------------*/
+/*-----------------------#mydog_infor_top-----------------------*/
 
 #mydog_infor {
-    width: 1280px;
+    width: 1920px;
     height: 700px;
     margin: 40px auto;
     background-color: #faf5e8;
@@ -76,7 +76,9 @@
     height: 400px;
     margin: 0 auto;
 }
-#mydog_infor>.mydog_infor_top>div>.mydog_bold {
+/*-----------------------.mydog_bold-----------------------*/
+.main_txt>.mydog_bold {
+    display: block;
     width: 1280px;
     height: 80px;
     line-height: 80px;
@@ -85,50 +87,233 @@
     font-weight: bold;
     padding: 20px 0;
 }
-#mydog_infor>.mydog_infor_bottom {
-    width: 1280px;
-    height: 300px;
-    margin: 0 auto;
-    /* background-color: rgb(95, 67, 67); */
-}
+/* ----------------------------------------------------------- */
 
-
+.mydog_infor_top {}
 .mydog_detail_infor {
-    overflow: hidden;
+    position: relative;
     width: 1280px;
-    height: 160px;
+    height: 150px;
     margin: 0 auto;
     text-align: center;
-    clear: both;
-    content: '';
-    display: block;
+    /* clear: both;
+    content: ''; */
 }
-.mydog_detail_infor>.infor_txt_wrap {
+.infor_txt_wrap {
+    position: relative;
+    left: 160px;
     float: left;
-    /* display: inline-block; */
     width: 300px;
-    height: 170px;
+    height: 150px;
     margin-right: 20px;
     background-color: rgb(167, 52, 115);
 }
 .point_red_txt {
+    display: block;
     width: 300px;
-    height: 160px;
+    height: 65px;
     color: red;
-    /* background-color: #fff; */
+    background-color: #fff;
     font-size: 4rem;
     font-weight: bold;
 }
 
 .basic_txt {
+    display: block;
     width: 300px;
-    height: 160px;
+    height: 100px;
     font-size: 1.5rem;
     padding-top: 10px;
+    clear: both;
 }
 
-.mydog_infor_bottom {
-    
+/* --------------------more_btn transition-------------------- */
+.more_btn {
+    width: 1280px;
+    height: 30px;
+    margin: 40px auto;
+}
+.more_btn>.more_btn_wrap {
+    display: block;
+    width: 102px;
+    height: 32px;
+    margin: 0 auto;
+    transition-property: width, height, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
 }
 
+.more_btn_wrap:hover {
+    width: 102px;
+    height: 32px;
+    background-color: rgb(211, 130, 24, 0.5);
+}
 
+.more_btn>.more_btn_wrap>a {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 2px solid #000;
+}
+/* --------------------------------------------------------- */
+.small_txt_top {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.small_txt_bottom {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*-----------------------#mydog_apply-----------------------*/
+#mydog_apply {
+    position: relative;
+    width: 1950px;
+    height: 3200px;
+    margin: 60px auto;
+    /* background-color: rgb(178, 153, 223); */
+}
+#mydog_apply>.apply_left_girl {
+    display: inline-block;
+    text-indent: -9999px;
+    width: 950px;
+    height: 650px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../common/images/apply_left_girl.png);
+}
+
+#mydog_apply>.apply_left_txt_01 {
+    float: right;
+    width: 830px;
+    height: 530px;
+    text-align: left;
+    padding: 60px;
+    /* background-color: rgb(173, 123, 123); */
+}
+.apply_left_txt_01>.apply_txt_bold {
+    display: block;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 70px auto;
+}
+.apply_txt_normal {
+    display: block;
+    line-height: 70px;
+    font-size: 1.5rem;
+}
+
+.apply_left_txt_01{}
+.apply_left_txt_01>.more_btn{
+    position: relative;
+}
+.apply_left_txt_01>.more_btn>.more_btn_wrap{
+    position: absolute;
+}
+.apply_left_txt_01>.more_btn>.more_btn_wrap>a{}
+
+
+/* 리트리버 img2 */
+.apply_right_dog {
+    position: absolute;
+    top: 550px;
+    right: 0;
+    text-indent: -9999px;
+    width: 848px;
+    height: 1050px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../common/images/apply_right_dog.png);
+}
+.apply_right_img_txt_01 {
+    position: relative;
+    display: inline-block;
+    width: 830px;
+    height: 700px;
+    text-align: right;
+    padding: 60px;
+}
+.apply_right_img_txt_bold {
+    display: block;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 70px auto;
+}
+.apply_right_img_txt_normal {
+    display: block;
+    line-height: 70px;
+    font-size: 1.5rem;
+    /* background-color: rgb(243, 108, 108); */
+}
+.apply_right_img_txt_01>.more_right_btn {
+    position: relative;
+}
+.more_right_btn_wrap {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin: 40px auto;
+}
+.more_right_btn_wrap>a {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 2px solid #000;
+}
+
+/* 단체견학 신청 img3 */
+.visit_img {
+    position: absolute;
+    top: 1550px;
+}
+/* .apply_right_img_txt_01에 po:r 찍음 */
+.apply_left_visit {
+    display: inline-block;
+    text-indent: -9999px;
+    width: 950px;
+    height: 650px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../common/images/apply_left_park.png);
+}
+.visit_img>.apply_left_txt_01 {
+    float: right;
+    width: 830px;
+    height: 530px;
+    text-align: left;
+    padding: 60px;
+}
+.visit_img>.more_btn {}
+
+
+/* 자원봉사 신청 img4 */
+.apply_right_walk {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 840px;
+    height: 1030px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../common/images/apply_right_walk.png);
+}
+.walk_img>.apply_right_img_txt_01 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 830px;
+    height: 700px;
+    text-align: right;
+    padding: 60px;
+}
