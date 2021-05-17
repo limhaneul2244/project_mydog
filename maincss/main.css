@@ -67,7 +67,7 @@
 /*-----------------------#mydog_infor_top-----------------------*/
 
 #mydog_infor {
-    width: 1920px;
+    width: 1280px;
     height: 700px;
     margin: 40px auto;
     background-color: #faf5e8;
@@ -107,16 +107,17 @@
     width: 300px;
     height: 150px;
     margin-right: 20px;
-    background-color: rgb(167, 52, 115);
+    /* background-color: rgb(167, 52, 115); */
 }
 .point_red_txt {
-    display: block;
+    display: inline;
     width: 300px;
     height: 65px;
     color: red;
-    background-color: #fff;
-    font-size: 4rem;
+    /* background-color: #fff; */
+    font-size: 3.5rem;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 .basic_txt {
@@ -272,8 +273,8 @@
 
 /* 단체견학 신청 img3 */
 .visit_img {
-    position: absolute;
-    top: 1550px;
+    position: relative;
+    top: 60px;
 }
 /* .apply_right_img_txt_01에 po:r 찍음 */
 .apply_left_visit {
@@ -476,6 +477,7 @@
 /*-----------------------#main_address-----------------------*/
 #main_address {
     position: relative;
+    width: 1920px;
 }
 
 
@@ -485,7 +487,7 @@
     text-indent: -9999px;
     width: 1920px;
     height: 427px;
-    margin: 0 auto;
+    margin: 150px auto;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-image: url(../common/images/main_gradation.png);

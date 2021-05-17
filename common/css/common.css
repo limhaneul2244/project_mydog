@@ -245,11 +245,11 @@ a:visited{
 	height: 20px; 
 	padding-right: 20px; 
 	margin-right: 20px;
+	font-weight: bold;
 	border-right: 1px solid #000; 
 }
-.footer_top>ul>li:first-child {
-	font-weight: bold;
-}
+.footer_top>ul>li:first-child {}
+.footer_top>ul>li>a:first-child {}
 .footer_top>ul>li:last-child {
 	border: none;
 }
@@ -284,41 +284,39 @@ a:visited{
 }
 
 .footer_infor {
-	/* display: block; */
 	float: left;
 	margin-left: 20px;
-	/* width: 1114px;
-	height: 50px; */
 }
 .footer_infor>address {
 	display: inline-block;
+	line-height: 2;
 }
 .footer_infor>address>span {
 	display: inline-block;
-	height: 50px;
+	height: 70px;
 	font-size: 15px;
-	/* margin: 20px 0 0 20px; */
 	/* background-color: rgb(214, 123, 226); */
 }
 
 .copyright {
-	padding-bottom: 20px;
+	display: block;
+	margin: 20px auto;
 }
 .footer {
 	width: 1920px;
 	height: 40px;
+	margin: 0 auto;
 	clear: both;
 	content: '';
+	background-color: #ea9a4d;
+	text-align: center;
 }
 .footer>p {
 	display: inline-block;
 	width: 1280px;
 	height: 40px;
-	margin: 0 auto;
 	line-height: 40px;
 	font-size: small;
-	text-align: center;
-	background-color: #ea9a4d;
 }
 
 
