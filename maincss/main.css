@@ -16,13 +16,14 @@
 }
 #main_visual>.slide_img>li {
     position: absolute;
-    top: 73px;
     left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s;
 }
-#main_visual>.slide_img>.test {
-    position: relative;
-}
+
 #main_visual>.slide_img>li>img {
+    display: block;
     width: 100%;
     height: 100%;
 }
@@ -316,4 +317,227 @@
     height: 700px;
     text-align: right;
     padding: 60px;
+}
+
+/*-----------------------#middle_txt-----------------------*/
+#middle_txt {
+    display: block;
+    width: 1920px;
+    height: 500px;
+    /* background-color: rgb(143, 67, 67); */
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+}
+#middle_txt span {
+    display: block;
+    font-size: 200px;
+    color: #d5d5d4;
+    line-height: 1;
+}
+#middle_txt>.middle_txt_AND {
+    font-size: 4rem;
+}
+
+/*-----------------------#dogshow-----------------------*/
+#dogshow {
+    width: 1920px;
+    height: 331px;
+}
+.dogshow_bg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 331px;
+    margin-top: 200px;
+    background-color: #d5d5d4;
+}
+.dogshow_bg>.fly_dog {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 980px;
+    height: 550px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../common/images/fly_dog.png);
+}
+.dogshow_wrap {
+    position: relative;
+    float: right;
+    width: 900px;
+    height: 331px;
+    /* background: rgb(236, 179, 93); */
+}
+.dogshow_txt {
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    height: 220px;
+    /* background-color: rgb(54, 143, 179); */
+}
+.dogshow_txt>span {
+    display: block;
+    font-weight: bold;
+}
+.dogshow_txt>span:first-child {
+    width: 500px;
+    font-size: 6rem;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 50px 50px 0px #918e8e, 100px 100px 0px #b5b2b2;
+}
+.dogshow_txt>span:last-child {
+    font-size: 1.5rem;
+    line-height: 331px;
+}
+
+.dogshow_wrap>.more_btn {
+    position: relative;
+    display: inline-block;
+    width: 900px;
+    height: 220px;
+}
+.dogshow_wrap>.more_btn>.more_btn_wrap {
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+}
+.dogshow_wrap>.more_btn>.more_btn_wrap>a {
+    display: block;
+    width: 102px;
+    height: 32px;
+}
+
+/*-----------------------#flower-----------------------*/
+#flower {
+    position: relative;
+    width: 1920px;
+    height: 610px;
+    margin: 50px auto;
+}
+.flower_bg {
+    display: block;
+    text-indent: -9999px;
+    width: 1920px;
+    height: 610px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../common/images/flower_bg.png);
+}
+.flower_wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 900px;
+    height: 610px;
+    /* background-color: rgb(197, 149, 185); */
+}
+.flower_txt {
+    position: relative;
+    display: table-cell;
+    height: 610px;
+    line-height: 2;
+    vertical-align: middle;
+}
+.flower_txt>.flower_bold {
+    display: block;
+    font-weight: bold;
+    font-size: 4rem;
+}
+.flower_txt>.flower_normal {
+    position: relative;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.flower_more_btn {}
+.flower_more_btn_wrap {
+    position: absolute;
+    left: 0;
+    top: 434px;
+    display: inline-block;
+    width: 104px;
+    height: 34px;
+}
+.flower_more_btn_wrap>a {
+    display: block;
+    width: 104px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 2px solid #000;
+}
+
+/*-----------------------#main_address-----------------------*/
+#main_address {
+    position: relative;
+}
+
+
+.main_gradation {
+    position: relative;
+    display: block;
+    text-indent: -9999px;
+    width: 1920px;
+    height: 427px;
+    margin: 0 auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../common/images/main_gradation.png);
+}
+
+.gradation_dog {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 400px;
+    height: 586px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../common/images/gradation_dog.png);
+}
+
+.main_add_wrap {
+    position: absolute;
+    top: 0;
+    left: 360px;
+    width: 1280px;
+    margin: 0 auto;
+}
+.infor_add_box {
+    display: inline-block;
+    width: 300px;
+    height: 347px;
+    margin-right: 20px;
+    padding: 40px;
+    /* background-color: rgb(41, 156, 209); */
+}
+
+.address_txt {
+    display: block;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 50px 0;
+}
+
+.infor_add_box>.phone {
+    font-size: 3rem;
+}
+.address_sub_txt {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    line-height: 2;
+}
+
+.address_btn {}
+.address_btn>a {
+    border-bottom: 3px solid #000;
 }

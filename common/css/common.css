@@ -26,10 +26,13 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Noto Sans KR', sans-serif;
 	/* font-family: 'Roboto', sans-serif; */
 	/* font-family: 'Nanum Gothic', sans-serif; */
 	/* font-family: 'Noto Sans', sans-serif; */
-	font-family: 'Noto Sans KR', sans-serif;
+	/* font-family: 'Nanum Myeongjo', serif; */
+	/* font-family: 'Open Sans', sans-serif; */
+	/* font-family: 'Stylish', sans-serif; */
 	
 }
 ol, ul {
@@ -98,6 +101,7 @@ a:visited{
 /*-----------------------layout-----------------------*/
 
 #wrap {
+	position: relative;
 	overflow: hidden;
 	width: 100%;
 }
@@ -111,6 +115,8 @@ a:visited{
 }
 
 #container {
+	position: relative;
+	top: 73px;
 	width: 100%;
 	z-index: 80;
 }

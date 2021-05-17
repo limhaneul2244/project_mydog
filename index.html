@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-    <title>Mydog&Samsung</title>
+    <title>Mydog & Samsung</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +10,21 @@
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans&family=Noto+Sans+KR&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&family=Noto+Sans+KR&family=Open+Sans&family=Roboto&family=Stylish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- bxslider 연결 -->
     <link rel="stylesheet" href="common/css/common.css">
     <link rel="stylesheet" href="maincss/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="common/js/jquery-3.6.0.min.js"></script>
     <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="mainjs/main.js"></script>
     <script src="common/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 
 <body>
@@ -63,11 +70,14 @@
             <div class="menu_box"></div>
         </div>
 
-        <div>
-            <div id="main_visual">
+<!-- mainVisual 끝 -->
+        <div id="container">
+            <h2 class="hidden">container</h2>
+
+            <section id="main_visual">
                 <h2 class="hidden">mainVisual</h2>
                 <ul class="slide_img">
-                    <li class="test">
+                    <li>
                         <img src="common/images/mainVisual_01.jpg" alt="메인슬라이드 이미지1">
                         <p class="visual_txt">안내견과 함께하는 사회공헌 활동에<br> 여러분도 참여하실 수 있습니다.</p>
                     </li>
@@ -80,11 +90,8 @@
                         <p class="visual_txt">안내견보다 반려견으로 살아갈<br> 개와 평생을 함께 할 가정을 찾습니다.</p>
                     </li>
                 </ul>
-            </div>
-        </div>
-<!-- mainVisual 끝 -->
-        <div id="container">
-            <h2 class="hidden">container</h2>
+            </section>
+
             <section id="section">
                 <article id="main_notice">
                     <div>
@@ -181,12 +188,67 @@
                 </article>
 
                 <article id="middle_txt">
+                    <h3 class="hidden">MYDOG AND SAMSUNG</h3>
                     <span>MYDOG</span>
-                    <span> A  N  D</span>
+                    <span class="middle_txt_AND">A  N  D</span>
                     <span>SAMSUNG</span>
                 </article>
 
+                <article id="dogshow">
+                    <h3 class="hidden">dogshow</h3>
+                    <div class="dogshow_bg">
+                        <span class="fly_dog">견공 이미지</span>
+                        <div class="dogshow_wrap">
+                            <div class="dogshow_txt">
+                                <span>Dog Show</span>
+                                <span>세계 다양한 견공들이 펼치는 Dog Show의 모든것</span>
+                            </div>
+                            <div class="more_btn">
+                                <div class="more_btn_wrap">
+                                    <a href="#">바로가기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="flower">
+                    <h3 class="hidden">추모하기</h3>
+                    <div class="flower_bg">추모이미지</div>
+                    <div class="flower_wrap">
+                        <div class="flower_txt">
+                            <span class="flower_bold">추모하기</span><span class="flower_normal">사랑을 나누고 떠난 견공들을 추모해주세요.</span>
+                        </div>
+                        <div class="flower_more_btn">
+                            <div class="flower_more_btn_wrap">
+                                <a href="#">바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
                 
+                <article id="main_address">
+                    <h3 class="hidden">마이독 정보</h3>
+                    <div class="main_gradation">그라데이션 이미지</div>
+                    <div class="gradation_dog">강아지 이미지</div>
+                    <div class="main_add_wrap">
+                        <div class="infor_add_box">
+                            <span class="address_txt">고객센터</span>
+                            <span class="address_sub_txt phone">031-320-8922</span>
+                            <span class="address_btn"><a href="#">mail to Webmaster</a></span>
+                        </div>
+                        <div class="infor_add_box">
+                            <span class="address_txt">ADDRESS</span>
+                            <span class="address_sub_txt">경기도 용인시 처인구 포곡읍<br>에버랜드로 199</span>
+                            <span class="address_btn"><a href="#">VIEW MAP</a></span>
+                        </div>
+                        <div class="infor_add_box">
+                            <span class="address_txt">NOTICE</span>
+                            <span class="address_sub_txt">마이독에서<br>새로운 소식을 전해드립니다.</span>
+                            <span class="address_btn"><a href="#">VIEW</a></span>
+                        </div>
+                    </div>
+                </article>
             </section>
         </div>
 <!-- container 끝 -->
@@ -221,6 +283,18 @@
             </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function(){
+          $('.bxslider').bxSlider({
+          auto: true,
+          autoControls: false,
+          stopAutoOnClick: true,
+          pager: false,
+          // slideWidth: 600
+          });
+        });
+      </script>
+    
 </body>
 
 </html>
