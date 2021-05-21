@@ -60,7 +60,7 @@ $(document).ready(function () {
 // 숫자 카운팅 효과
 
 $(function() {
-  var count0 = count1 = count2 = 0;
+  var count0 = count2 = count3 = 0;
 
   timeCounter();
 
@@ -89,25 +89,25 @@ $(function() {
     //   }
     // }
 
-    id1 = setInterval(count1Fn, 200.57142857);
-
-    function count1Fn() {
-      count1++;
-      if (count1 > 12) {
-        clearInterval(id1);
-      } else {
-        $(".point_red_txt").eq(1).text(count1);
-      }
-    }
-
     id2 = setInterval(count2Fn, 200.57142857);
 
     function count2Fn() {
       count2++;
-      if (count2 < 15) {
+      if (count2 > 12) {
         clearInterval(id2);
       } else {
         $(".point_red_txt").eq(2).text(count2);
+      }
+    }
+
+    id3 = setInterval(count3Fn, 200.57142857);
+    
+    function count3Fn() {
+      count3++;
+      if (count3 > 15) {
+        clearInterval(id3);
+      } else {
+        $(".point_red_txt").eq(3).text(count3);
       }
     }
   }

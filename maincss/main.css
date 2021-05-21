@@ -33,13 +33,15 @@
 }
 #main_visual>.slide_img>li>.visual_txt {
     position: absolute;
-    bottom: 300px;
-    left: 1060px;
-    width: 500px;
+    display: block;
+    top: 455px;
+    left: 485px;
+    width: 950px;
     height: 150px;
     color: #fff;
     font-weight: bold;
-    line-height: 70px;
+    text-align: center;
+    line-height: 150px;
     font-size: 2rem;
     background-color: rgb(247, 247, 247, 0.5);
 }
