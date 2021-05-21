@@ -229,7 +229,7 @@ a:visited{
 }
 
 .footer_top {
-	width: 100%;
+	width: 70%;
 	height: 30px;
 	padding-top: 10px;
 }
@@ -297,6 +297,44 @@ a:visited{
 	font-size: 15px;
 	/* background-color: rgb(214, 123, 226); */
 }
+
+.footer_right {
+	float: right;
+	width: 200px;
+	box-sizing: border-box;
+	background-color: red;
+}
+.footer_right>.select {
+	width: 200px;
+	border: 1px solid #000;
+}
+.footer_right>.select>a.arrow {
+	display: block;
+	width: 200px;
+	height: 35px;
+	color: #000;
+	text-align: center;
+	line-height: 35px;
+}
+.footer_right>.select>.family_site {
+	/* display: none; */
+	width: 100%;
+}
+.footer_right>.select>.family_site>li {}
+.footer_right>.select>.family_site>li>a {
+	display: block;
+	width: 200px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+.footer_right>.select>.family_site>li:hover>a {
+	background-color: #ea9a4d;
+	opacity: 0.5;
+	color: #000;
+}
+
+
 
 .copyright {
 	display: block;

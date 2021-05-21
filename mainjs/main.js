@@ -60,29 +60,40 @@ $(document).ready(function () {
 // 숫자 카운팅 효과
 
 $(function() {
-  var count0 = count1 = count2 = count3 = 0;
+  var count0 = count1 = count2 = 0;
 
   timeCounter();
 
   function timeCounter() {
 
-    // id0 = setInterval(count0Fn, 12.738853);
+    id0 = setInterval(count0Fn, 0.5);
 
-    // function count0Fn() {
-    //   count0++;
-    //   if (count0 > 785) {
-    //     clearInterval(id0);
+    function count0Fn() {
+      count0++;
+      if (count0 > 1994) {
+        clearInterval(id0);
+      } else {
+        $(".point_red_txt").eq(0).text(count0);
+      }
+
+    }
+
+    // id1 = setInterval(count1Fn, 0.5);
+
+    // function count1Fn() {
+    //   count1++;
+    //   if (count1 > 1994) {
+    //     clearInterval(id1);
     //   } else {
-    //     $(".point_red_txt").eq(0).text(count0);
+    //     $(".point_red_txt").eq(1).text(count1);
     //   }
-
     // }
 
-    id1 = setInterval(count1Fn, 0.5);
+    id1 = setInterval(count1Fn, 200.57142857);
 
     function count1Fn() {
       count1++;
-      if (count1 > 1994) {
+      if (count1 > 12) {
         clearInterval(id1);
       } else {
         $(".point_red_txt").eq(1).text(count1);
@@ -93,21 +104,10 @@ $(function() {
 
     function count2Fn() {
       count2++;
-      if (count2 > 12) {
+      if (count2 < 15) {
         clearInterval(id2);
       } else {
         $(".point_red_txt").eq(2).text(count2);
-      }
-    }
-
-    id3 = setInterval(count3Fn, 200.57142857);
-
-    function count3Fn() {
-      count3++;
-      if (count3 > 15) {
-        clearInterval(id3);
-      } else {
-        $(".point_red_txt").eq(3).text(count3);
       }
     }
   }
