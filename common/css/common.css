@@ -116,7 +116,6 @@ a:visited{
 
 #container {
 	position: relative;
-	top: 73px;
 	width: 100%;
 	z-index: 80;
 }
@@ -161,6 +160,7 @@ a:visited{
 #gnb {
 	float: left;
 	width: 651px;
+	overflow: hidden;
 }
 
 #gnb>.main_menu {
@@ -193,8 +193,7 @@ a:visited{
 	background-color: rgb(211, 130, 24, 0.5);
 }
 
-.sub_menu>li {
-}
+.sub_menu>li {}
 
 .sub_menu>li>a {
 	display: block;
@@ -232,7 +231,6 @@ a:visited{
 .footer_top {
 	width: 70%;
 	height: 30px;
-	padding-top: 10px;
 }
 
 .footer_top>ul {
@@ -260,33 +258,34 @@ a:visited{
 }
 
 /* .footer_bottom >footer_logo */
-
-.footer_inner>.footer_logo {
-	float: left;
-	width: 166px;
-	height: 32px;
-	/* margin: 20px auto; */
+.footer_bottom {
+	padding-top: 10px;
 }
-.footer_inner>.footer_logo>.footer_logo_icon {
+.footer_bottom>.footer_logo {
+	float: left;
+	width: 300px;
+	height: 21px;
+	margin-left: 50px;
+}
+.footer_bottom>.footer_logo>.footer_logo_icon {
 	display: block;
 	text-indent: -9999px;
-	width: 166px;
-	height: 32px;
-	background-position: 0,0;
+	width: 200px;
+	height: 21px;
+	background-position: 0 0;
 	background-repeat: no-repeat;
-	background-image: url(../images/footer_logo.png);
+	background-image: url(../images/mydog_footer_logo.png);
 	background-color: #fff;
 }
-.footer_inner>.footer_logo>.footer_logo_icon>span {
+.footer_bottom>.footer_logo>.footer_logo_icon>span {
 	display: inline-block;
 }
-.footer_inner>.footer_logo>.footer_logo_icon>span>a {
+.footer_bottom>.footer_logo>.footer_logo_icon>span>a {
 	width: 100%;
 }
 
 .footer_infor {
 	float: left;
-	margin-left: 60px;
 }
 .footer_infor>address {
 	display: inline-block;
@@ -301,7 +300,7 @@ a:visited{
 
 .footer_right {
 	position: absolute;
-	top: 32px;
+	top: 28px;
 	right: 100px;
 	float: right;
 	width: 200px;
@@ -359,6 +358,20 @@ a:visited{
 	font-size: small;
 }
 
+/* top_btn */
+#top_btn {
+	display: none;
+	position: fixed;
+	right: 10%;
+	bottom: 5%;
+	z-index: 150;
+}
+#top_btn>a {
+	display: block;
+	width: 90px;
+	height: 90px;
+}
+#top_btn>a>img {}
 
 
 

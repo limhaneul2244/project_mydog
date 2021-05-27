@@ -6,7 +6,7 @@
     overflow: hidden;
     position: relative;
     width: 1920px;
-    height: 1060px;
+    padding-top: 73px;
     margin: 0 auto;
 }
 #main_visual>.slide_img {
@@ -31,7 +31,7 @@
 #main_visual>.slide_img>li>p {
     display: block;
 }
-#main_visual>.slide_img>li>.visual_txt {
+#main_visual>.slide_img>li>.visual_txt00 {
     position: absolute;
     display: block;
     top: 455px;
@@ -45,7 +45,34 @@
     font-size: 2rem;
     background-color: rgb(247, 247, 247, 0.5);
 }
-
+#main_visual>.slide_img>li>.visual_txt01 {
+    position: absolute;
+    display: block;
+    top: 200px;
+    left: 485px;
+    width: 950px;
+    height: 150px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+    font-size: 2rem;
+    background-color: rgb(247, 247, 247, 0.5);
+}
+#main_visual>.slide_img>li>.visual_txt02 {
+    position: absolute;
+    display: block;
+    top: 320px;
+    left: 100px;
+    width: 600px;
+    height: 230px;
+    line-height: 3.5;
+    color: #3a3a3a;
+    font-weight: bold;
+    text-align: left;
+    font-size: 2rem;
+    background-color: rgb(247, 247, 247, 0.5);
+}
 
 /*-----------------------#main_notice-----------------------*/
 #section {
@@ -69,34 +96,34 @@
 /*-----------------------#mydog_infor_top-----------------------*/
 
 #mydog_infor {
-    width: 1280px;
+    width: 1000px;
     height: 700px;
-    margin: 40px auto;
+    margin: 0px auto;
+    margin-top: 60px;
     background-color: #faf5e8;
 }
 #mydog_infor>.mydog_infor_top {
-    width: 1280px;
+    width: 100%;
     height: 400px;
     margin: 0 auto;
 }
 /*-----------------------.mydog_bold-----------------------*/
 .main_txt>.mydog_bold {
     display: block;
-    width: 1280px;
+    width: 100%;
     height: 80px;
     line-height: 80px;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 /* ----------------------------------------------------------- */
 
-.mydog_infor_top {}
 .mydog_detail_infor {
     position: relative;
-    width: 1280px;
-    height: 150px;
+    width: 850px;
+    height: 120px;
     margin: 0 auto;
     text-align: center;
     /* clear: both;
@@ -104,19 +131,19 @@
 }
 .infor_txt_wrap {
     position: relative;
-    left: 160px;
     float: left;
-    width: 300px;
+    width: 270px;
     height: 150px;
     margin-right: 20px;
-    /* background-color: rgb(167, 52, 115); */
+}
+.infor_txt_wrap:last-child {
+    margin-right: 0;
 }
 .point_red_txt {
     display: inline;
-    width: 300px;
+    width: 270px;
     height: 65px;
     color: red;
-    /* background-color: #fff; */
     font-size: 3.5rem;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
@@ -124,8 +151,8 @@
 
 .basic_txt {
     display: block;
-    width: 300px;
-    height: 100px;
+    width: 270px;
+    height: 50px;
     font-size: 1.5rem;
     padding-top: 10px;
     clear: both;
@@ -133,34 +160,39 @@
 
 /* --------------------more_btn transition-------------------- */
 .more_btn {
-    width: 1280px;
-    height: 30px;
+    width: 900px;
+    height: 36px;
     margin: 40px auto;
 }
 .more_btn>.more_btn_wrap {
     display: block;
-    width: 102px;
-    height: 32px;
+    width: 106px;
+    height: 36px;
     margin: 0 auto;
     transition-property: width, height, background-color;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
     transition-timing-function: linear;
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
 }
 
 .more_btn_wrap:hover {
-    width: 102px;
-    height: 32px;
+    width: 106px;
+    height: 36px;
     background-color: rgb(211, 130, 24, 0.5);
 }
 
 .more_btn>.more_btn_wrap>a {
     display: block;
-    width: 100px;
-    height: 30px;
-    line-height: 30px;
+    width: 106px;
+    height: 36px;
+    line-height: 36px;
     text-align: center;
     border: 2px solid #000;
+}
+
+.more_btn>.more_btn_wrap>a:hover {
+    color: #fff;
+    border: 2px solid #fff;
 }
 /* --------------------------------------------------------- */
 .small_txt_top {
@@ -198,14 +230,13 @@
     width: 830px;
     height: 530px;
     text-align: left;
-    padding: 60px;
-    /* background-color: rgb(173, 123, 123); */
+    padding: 50px;
 }
 .apply_left_txt_01>.apply_txt_bold {
     display: block;
     font-weight: bold;
     font-size: 3rem;
-    margin: 70px auto;
+    margin: 60px auto;
 }
 .apply_txt_normal {
     display: block;
@@ -227,7 +258,7 @@
 .apply_right_dog {
     position: absolute;
     top: 550px;
-    right: 0;
+    right: 35px;
     text-indent: -9999px;
     width: 848px;
     height: 1050px;
@@ -302,7 +333,7 @@
 .apply_right_walk {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 35px;
     display: inline-block;
     text-indent: -9999px;
     width: 840px;
@@ -326,43 +357,26 @@
 #middle_txt {
     display: block;
     width: 1920px;
-    height: 500px;
-    /* background-color: rgb(143, 67, 67); */
+    padding: 150px 0;
+}
+.mydog_samsung_img {
+    text-indent: -9999px;
+    width: 1500px;
+    height: 400px;
     margin: 0 auto;
-    padding: 50px 0;
-    text-align: center;
-    font-family: 'Nanum Myeongjo', serif;
-    font-weight: bold;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../common/images/main_madogSamsung_txt.png);
 }
-#middle_txt span {
-    display: block;
-    font-size: 200px;
-    color: #d5d5d4;
-    line-height: 1;
-}
-#middle_txt>.middle_txt_AND {
-    font-size: 4rem;
-}
-
 /*-----------------------#dogshow-----------------------*/
+
 #dogshow {
     width: 1920px;
-    height: 331px;
 }
 .dogshow_bg {
     position: relative;
     display: block;
-    width: 100%;
-    height: 331px;
-    margin-top: 200px;
-    background-color: #d5d5d4;
-}
-.dogshow_bg>.fly_dog {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    text-indent: -9999px;
     width: 980px;
     height: 550px;
     background-position: 0 0;
@@ -370,110 +384,90 @@
     background-image: url(../common/images/fly_dog.png);
 }
 .dogshow_wrap {
-    position: relative;
-    float: right;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
     width: 900px;
     height: 331px;
-    /* background: rgb(236, 179, 93); */
+    padding-left: 1020px;
+    /* background-color: yellow; */
 }
 .dogshow_txt {
     position: absolute;
     top: -80px;
     width: 100%;
     height: 220px;
-    /* background-color: rgb(54, 143, 179); */
 }
 .dogshow_txt>span {
     display: block;
-    font-weight: bold;
 }
 .dogshow_txt>span:first-child {
     width: 500px;
     font-size: 6rem;
+    font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     text-shadow: 50px 50px 0px #918e8e, 100px 100px 0px #b5b2b2;
 }
 .dogshow_txt>span:last-child {
     font-size: 1.5rem;
-    line-height: 331px;
+    padding-top: 150px;
 }
 
-.dogshow_wrap>.more_btn {
-    position: relative;
-    display: inline-block;
-    width: 900px;
-    height: 220px;
+.df_btn {
+    padding-top: 220px;
 }
-.dogshow_wrap>.more_btn>.more_btn_wrap {
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: 0;
-}
-.dogshow_wrap>.more_btn>.more_btn_wrap>a {
-    display: block;
-    width: 102px;
-    height: 32px;
-}
-
-/*-----------------------#flower-----------------------*/
-#flower {
-    position: relative;
-    width: 1920px;
-    height: 610px;
-    margin: 50px auto;
-}
-.flower_bg {
-    display: block;
-    text-indent: -9999px;
-    width: 1920px;
-    height: 610px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-image: url(../common/images/flower_bg.png);
-}
-.flower_wrap {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 900px;
-    height: 610px;
-    /* background-color: rgb(197, 149, 185); */
-}
-.flower_txt {
-    position: relative;
-    display: table-cell;
-    height: 610px;
-    line-height: 2;
-    vertical-align: middle;
-}
-.flower_txt>.flower_bold {
-    display: block;
-    font-weight: bold;
-    font-size: 4rem;
-}
-.flower_txt>.flower_normal {
-    position: relative;
-    display: block;
-    font-size: 1.5rem;
-}
-
-.flower_more_btn {}
-.flower_more_btn_wrap {
-    position: absolute;
-    left: 0;
-    top: 434px;
-    display: inline-block;
+.df_btn>.df_btn_wrap {
     width: 104px;
     height: 34px;
+    margin-top: 20px;
 }
-.flower_more_btn_wrap>a {
+.df_btn>.df_btn_wrap>a {
     display: block;
     width: 104px;
     height: 34px;
     line-height: 34px;
     text-align: center;
     border: 2px solid #000;
+}
+/*-----------------------#flower-----------------------*/
+
+#flower {
+    position: relative;
+    width: 1920px;
+    height: 499px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.flower_bg {
+    width: 1920px;
+    height: 499px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../common/images/flower_bg.png);
+}
+.flower_wrap {
+    padding-left: 1020px;
+    width: 900px;
+    height: 499px;
+}
+.flower_wrap>.flower_txt {
+    padding-top: 62px;
+}
+.flower_txt>.flower_bold {
+    display: block;
+    font-weight: bold;
+    font-size: 4rem;
+    padding: 50px 0;
+}
+.flower_txt>.flower_normal {
+    position: relative;
+    display: block;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+.flower_btn {
+    padding-top: 20px;
 }
 
 /*-----------------------#main_address-----------------------*/
@@ -482,13 +476,12 @@
     width: 1920px;
 }
 
-
 .main_gradation {
     position: relative;
     display: block;
     text-indent: -9999px;
     width: 1920px;
-    height: 427px;
+    height: 400px;
     margin: 150px auto;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -501,8 +494,8 @@
     right: 0;
     display: inline-block;
     text-indent: -9999px;
-    width: 400px;
-    height: 586px;
+    width: 350px;
+    height: 513px;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-image: url(../common/images/gradation_dog.png);
@@ -516,27 +509,26 @@
     margin: 0 auto;
 }
 .infor_add_box {
-    display: inline-block;
+    float: left;
     width: 300px;
-    height: 347px;
+    height: 320px;
     margin-right: 20px;
     padding: 40px;
-    /* background-color: rgb(41, 156, 209); */
 }
-
 .address_txt {
     display: block;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 50px 0;
 }
 
 .infor_add_box>.phone {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 45px;
 }
 .address_sub_txt {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 60px;
     line-height: 2;
 }
