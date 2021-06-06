@@ -222,7 +222,7 @@
     height: 650px;
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-image: url(../common/images/apply_left_girl.png);
+    background-image: url(../images/apply_left_girl.png);
 }
 
 #mydog_apply>.apply_left_txt_01 {
@@ -264,7 +264,7 @@
     height: 1050px;
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-image: url(../common/images/apply_right_dog.png);
+    background-image: url(../images/apply_right_dog.png);
 }
 .apply_right_img_txt_01 {
     position: relative;
@@ -317,7 +317,7 @@
     height: 650px;
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-image: url(../common/images/apply_left_park.png);
+    background-image: url(../images/apply_left_park.png);
 }
 .visit_img>.apply_left_txt_01 {
     float: right;
@@ -340,7 +340,7 @@
     height: 1030px;
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-image: url(../common/images/apply_right_walk.png);
+    background-image: url(../images/apply_right_walk.png);
 }
 .walk_img>.apply_right_img_txt_01 {
     position: absolute;
@@ -367,7 +367,7 @@
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url(../common/images/main_madogSamsung_txt.png);
+    background-image: url(../images/main_madogSamsung_txt.png);
 }
 /*-----------------------#dogshow-----------------------*/
 
@@ -381,7 +381,7 @@
     height: 550px;
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-image: url(../common/images/fly_dog.png);
+    background-image: url(../images/fly_dog.png);
 }
 .dogshow_wrap {
     position: absolute;
@@ -444,7 +444,7 @@
     height: 499px;
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-image: url(../common/images/flower_bg.png);
+    background-image: url(../images/flower_bg.png);
 }
 .flower_wrap {
     padding-left: 1020px;
@@ -485,7 +485,7 @@
     margin: 150px auto;
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-image: url(../common/images/main_gradation.png);
+    background-image: url(../images/main_gradation.png);
 }
 
 .gradation_dog {
@@ -498,7 +498,7 @@
     height: 513px;
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-image: url(../common/images/gradation_dog.png);
+    background-image: url(../images/gradation_dog.png);
 }
 
 .main_add_wrap {
