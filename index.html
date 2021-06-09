@@ -27,6 +27,8 @@
     <script src="mainjs/main.js"></script>
     <script src="mainjs/aos.js"></script>
     <script src="common/js/easing.js"></script>
+    <script src="mainjs/mainpopup.js"></script>
+    <!-- JS팝업창 -->
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 
@@ -256,7 +258,7 @@
                 </article>
             </section>
         </div>
-<!-- container 끝 -->
+    <!-- container 끝 -->
         <div id="footer">
             <h2 class="hidden">footer</h2>
             <div class="footer_inner">
@@ -302,6 +304,27 @@
         <div id="top_btn">
             <a href="javascript:void(0)"><img src="common/images/mydog_top_btn.png" alt="top_btn"></a>
         </div>
+    </div>
+
+    <!-- 팝업(모달)창 -->
+    <div id="showimage" style="position: absolute;top: 200px; left: 100px; width: 322px; height: 322px; z-index: 150;">
+        <div class="pop_img"><img src="popup/popup_noQR.png" alt="상업적 목적이 아닌 개인포트폴리오용도로 제작되었다는 의미가 담긴 이미지 그 출처가 따로 있음을 밝힘"></div>
+        <form action="" style="font-size: 12px; text-align: center; background-color: rgb(131, 131, 131);">
+            <input type="checkbox" id="Notice" name="Notice" titel="오늘은 이 창을 열지 않음 선택 상자">
+            <label for="Notice">오늘은 이 창을 열지 않음</label>
+            <a href="#" onclick="closewin();hidebox();return false;">[close]</a>
+        </form>
+        <script>
+            function closewin(){
+                let chk = document.getElementById("Notice")
+                if(chk.checked){
+                    setCookie("Notice","done",1); //일주일 동안 보지 않게 하려면 7로 변경
+                }
+            }
+            if(getCook("Notice")=="Done"){ //notice와 모양이 같으면 박스를 숨겨
+                hidebox();
+            }
+        </script>
     </div>
     <!-- <script>
         $(document).ready(function(){
