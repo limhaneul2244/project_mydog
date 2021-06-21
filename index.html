@@ -9,8 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="app_icon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&family=Noto+Sans+KR&family=Open+Sans&family=Roboto&family=Stylish&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -25,6 +24,9 @@
     <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
     <script src="common/js/common.js"></script>
     <script src="mainjs/main.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+    <!-- <script src="mainjs/jquery-syaku.rolling.js"></script> -->
+    <!-- notice 롤링 -->
     <script src="mainjs/aos.js"></script>
     <script src="common/js/easing.js"></script>
     <script src="mainjs/mainpopup.js"></script>
@@ -80,28 +82,27 @@
             <h2 class="hidden">container</h2>
 
             <section id="main_visual">
-                <h2 class="hidden">mainVisual</h2>
-                <ul class="slide_img">
-                    <li>
-                        <img src="images/mainVisual_01.jpg" alt="메인슬라이드 이미지1">
-                        <p class="visual_txt00">안내견과 함께하는 사회공헌 활동에 여러분도 참여하실 수 있습니다.</p>
-                    </li>
-                    <li>
-                        <img src="images/mainVisual_02.jpg" alt="메인슬라이드 이미지2">
-                        <p class="visual_txt01">안내견은 시각장애인의 동반자가 되어 안전한 보행을 돕습니다.</p>
-                    </li>
-                    <li>
-                        <img src="images/mainVisual_03.png" alt="메인슬라이드 이미지3">
-                        <p class="visual_txt02">안내견보다 반려견으로 살아갈 개와<br>평생을 함께 할 가정을 찾습니다.</p>
-                    </li>
-                </ul>
+                <h3 class="hidden">mainVisual</h3>
+                <video id="vid" autoplay="autoplay" loop="loop" muted="muted" controls>
+                    <source src="video/dog_video.mp4" type="video/mp4">
+                    <strong>Your browser does not support the video tag.</strong>
+                </video>
             </section>
 
             <section id="section">
                 <article id="main_notice">
                     <h3 class="hidden">NOTICE</h3>
-                    <div>
-                        <a href="https://mydog.samsung.com/"><span class="notice_txt"> [NOTICE] 외부 후원 및 관계대상자 영리활동 불가안내</span></a>
+                    <div id="srolling"></div>
+                    <div id="notice_box" >
+                        <a class="headnews" href="https://mydog.samsung.com/">
+                            <span class="notice_txt"> [NOTICE] 외부 후원 및 관계대상자 영리활동 불가안내</span>
+                        </a>
+                        <a class="headnews" href="https://mydog.samsung.com/">
+                            <span class="notice_txt"> [NOTICE] 코로나19에 따른 견사 자원봉사 활동 잠정 연기</span>
+                        </a>
+                        <a class="headnews" href="https://mydog.samsung.com/">
+                            <span class="notice_txt"> [NOTICE] 코로나19로 인한 안내견학교 내방 안내</span>
+                        </a>
                     </div>
                 </article>
                 <article id="mydog_infor">
@@ -337,6 +338,24 @@
         });
     });
     </script> -->
+
+    <!-- 페이지롤링효과 -->
+    <script type="text/javascript">
+        jQuery(function() {
+  
+            jQuery("#srolling").srolling({
+                data : $(".headnews"),  // 노출될 아이템
+                auto : true,                    //자동 롤링 true , false
+                width : 1280,                 // 노출될 아이템 크기
+                height : 70,                    // 노출될 아이템 크기
+                item_count : 1,         // 이동 될 아이템 수
+                cache_count : 1,            // 임시로 불러올 아이템 수
+                delay : 1000,               // 이동 아이템 딜레이
+                delay_frame : 500,      // 아이템 흐르는 속도
+                move : 'top',               // 이동 방향 left , right , top , down
+            });
+        });
+    </script>
     <!-- aos 효과 -->
     <script>
         AOS.init();

@@ -1,76 +1,28 @@
+/**
+ * jQuery Syaku Rolling ver 1.2.0
+ *
+ * Copyright (c) Seok Kyun. Choi. ÃÖ¼®±Õ
+ * GNU Lesser General Public License
+ * http://www.gnu.org/licenses/lgpl.html
+ *
+ * registered date 20110830
+ * http://syaku.tistory.com
+ */
 
-// ìˆ«ì ì¹´ìš´íŒ… íš¨ê³¼------------------------------------------------
-
-$(function() {
-  var count0 = count2 = count3 = 0;
-
-  timeCounter();
-
-  function timeCounter() {
-
-    id0 = setInterval(count0Fn, 0.5);
-
-    function count0Fn() {
-      count0++;
-      if (count0 > 1994) {
-        clearInterval(id0);
-      } else {
-        $(".point_red_txt").eq(0).text(count0);
-      }
-
-    }
-
-    // id1 = setInterval(count1Fn, 0.5);
-
-    // function count1Fn() {
-    //   count1++;
-    //   if (count1 > 1994) {
-    //     clearInterval(id1);
-    //   } else {
-    //     $(".point_red_txt").eq(1).text(count1);
-    //   }
-    // }
-
-    id2 = setInterval(count2Fn, 200.57142857);
-
-    function count2Fn() {
-      count2++;
-      if (count2 > 12) {
-        clearInterval(id2);
-      } else {
-        $(".point_red_txt").eq(2).text(count2);
-      }
-    }
-
-    id3 = setInterval(count3Fn, 200.57142857);
-    
-    function count3Fn() {
-      count3++;
-      if (count3 > 15) {
-        clearInterval(id3);
-      } else {
-        $(".point_red_txt").eq(3).text(count3);
-      }
-    }
-  }
-});
-
-
-//notice ë¡¤ë§ íš¨ê³¼------------------------------------------------
 (function($) {
 
   $.fn.srolling = function(settings) {
 
     settings = jQuery.extend({
       data : [ ],
-      name : '#srolling_area',
-      item_count : 1, 
-      cache_count : 10, 
-      width : 1280, 
+      name : '#srolling_area', // ·Ñ¸µ
+      item_count : 1, // ¾ÆÀÌÅÛ ¿òÁ÷ÀÓ ¼ö
+      cache_count : 10, // ÀÓ½Ã ¾ÆÀÌÅÛ ¼ö
+      width : 100, // ¾ÆÀÌÅÛ Å©±â
       height : 100,
-      auto : false, 
-      delay : 1000, 
-      delay_frame : 500, 
+      auto : false, // ÀÚµ¿ ¿òÁ÷ÀÓ
+      delay : 1000, // µô·¹ÀÌ½Ã°£
+      delay_frame : 500, // Èå¸£´Â ¼Óµµ
       move : 'left',
       prev : '#srolling_prev',
       next : '#srolling_next'
@@ -93,7 +45,7 @@ $(function() {
     var item_width = settings.width;
     var item_height = settings.height;
 
-    var item_total = data.length;
+    var item_total = data.length; // ¾ÆÀÌÅÛ ÃÑ¼ö
     var prev_idx = item_total;
     var next_idx = 0;
 
@@ -110,7 +62,7 @@ $(function() {
     }
 
     var box = this;
-    var box_area = box.append("<div id='srolling_area' style='width:" + w_full_size + "px;position: absolute;'></div>");
+    var box_area = box.append("<div id='srolling_area' style='width:" + w_full_size + "px;position: absolute;white-space:nowrap;'></div>");
     box_area = jQuery(name,box);
     var item_area = jQuery("<div></div>").css("width",item_width).css("height",item_height).css("float","left").css("overflow","hidden");
 
@@ -227,7 +179,7 @@ $(function() {
       }
 
     }
-//í…ìŠ¤íŠ¸ ìƒ, í•˜ ì›€ì§ì„
+
     function _next_act() {
       var prev_obj = jQuery(prev);
       var next_obj = jQuery(next);
@@ -318,3 +270,4 @@ $(function() {
   };
   
 })(jQuery);
+
