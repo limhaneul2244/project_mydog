@@ -295,7 +295,6 @@ a:visited{
 	display: inline-block;
 	height: 70px;
 	font-size: 15px;
-	/* background-color: rgb(214, 123, 226); */
 }
 
 .footer_right {
@@ -374,38 +373,20 @@ a:visited{
 #top_btn>a>img {}
 
 
-
-
-
-/* .footer_bottom {
-	margin-top: 10px;
-}
-.footer_bottom>.footer_bottom_left {
-	width: 170px;
-	height: 32px;
-	margin: 0 auto;
-	clear:both;
-}
-.footer_bottom>.footer_bottom_left>.footer_logo {
-	display: inline-block;
-	text-indent: -9999px;
-	width: 166px;
-	height: 32px;
-	background-position: 0,0;
-	background-repeat: no-repeat;
-	background-image: url(/images/footer_logo.png);
-}
-.footer_bottom>.footer_bottom_left>.footer_logo>a {
-	width: 166px;
-	height: 32px;
-}
-
-.footer_infor {
-}
-.footer_infor>address {
-	float: left;
-}
-.footer_infor>address>span {
-	display: block;
+/* @media screen */
+/* -----------------------------일반PC (1281~1600 / 1280px정렬)----------------------------- */
+/* @media screen and (min-width: 1281px) and (max-width: 1600px) {
+    
 } */
-
+/* -----------------------------대형태블릿(769~1280)----------------------------- */
+/* @media screen and (min-width: 769px) and (max-width: 1280px) {
+    
+} */
+/* -----------------------------중형태블릿(415~768)----------------------------- */
+/* @media screen and (min-width: 415px) and (max-width: 768px) {
+    
+} */
+/* -----------------------------모바일(~414px)----------------------------- */
+/* @media screen and (max-width: 414px) {
+    
+} */
