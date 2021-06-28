@@ -1,103 +1,5 @@
 @charset "UTF-8";
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    text-decoration: none;
-}
-HTML5 display-role reset for older browsers 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-	font-family: 'Noto Sans KR', sans-serif;
-	/* font-family: 'Roboto', sans-serif; */
-	/* font-family: 'Nanum Gothic', sans-serif; */
-	/* font-family: 'Noto Sans', sans-serif; */
-	/* font-family: 'Nanum Myeongjo', serif; */
-	/* font-family: 'Open Sans', sans-serif; */
-	/* font-family: 'Stylish', sans-serif; */
-	
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-a:visited{
-	text-decoration: none;
-}
-#wrap a:active{
-	text-decoration: #000;
-}
-.hidden {
-    position: absolute;
-    left: -1000px;
-    top: 0;
-    display: block;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    color: #fff
-}
-.clear {
-	display: block;
-	clear:both;
-	content:'';
-}
-* {
-	color: #000;
-}
 
-/* -----------------------skipNav----------------------- */
-#skip_nav {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-}
-#skip_nav a {
-	display: block;
-	height: 1px;
-	margin-bottom: -1px;
-	overflow: hidden;
-	text-align: center;
-	text-decoration: none;
-	color: #333;
-	font-size: 12px;
-}
-#skip_nav a:hover,
-#skip_nav a:focus,
-#skip_nav a:active {
-	display: block;
-	height: auto;
-	padding: 5px 0;
-	background: #f2f2f2;
-}
 /*-----------------------layout-----------------------*/
 
 #wrap {
@@ -166,9 +68,7 @@ a:visited{
 #gnb>.main_menu {
 	overflow: hidden;
 	width: 100%;
-	height: 216px;
 	padding-top: 16.5px;
-	/* background-color: blue; */
 }
 
 #gnb>.main_menu>li {
@@ -181,7 +81,6 @@ a:visited{
 	height: 56px;
 	text-align: center;
 	line-height: 56px;
-	/* background-color: rgb(60, 141, 173); */
 }
 #gnb>.main_menu>li>.depth:hover {
 	box-sizing: border-box;
@@ -201,7 +100,6 @@ a:visited{
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
-	/* background-color: rgb(175, 218, 139); */
 }
 
 .sub_menu>li>a:hover {
@@ -210,7 +108,6 @@ a:visited{
 	background-color: rgb(255, 255, 255, 0.6);
 }
 
-/* .menu_box { width: 100%; height: 160px; background-color: rgba(228, 204, 204, 0.7);} */
 
 
 /*-----------------------footer-----------------------*/
@@ -370,23 +267,23 @@ a:visited{
 	width: 90px;
 	height: 90px;
 }
-#top_btn>a>img {}
+
 
 
 /* @media screen */
 /* -----------------------------일반PC (1281~1600 / 1280px정렬)----------------------------- */
-/* @media screen and (min-width: 1281px) and (max-width: 1600px) {
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
     
-} */
+}
 /* -----------------------------대형태블릿(769~1280)----------------------------- */
-/* @media screen and (min-width: 769px) and (max-width: 1280px) {
+@media screen and (min-width: 769px) and (max-width: 1280px) {
     
-} */
+}
 /* -----------------------------중형태블릿(415~768)----------------------------- */
-/* @media screen and (min-width: 415px) and (max-width: 768px) {
+@media screen and (min-width: 415px) and (max-width: 768px) {
     
-} */
+}
 /* -----------------------------모바일(~414px)----------------------------- */
-/* @media screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {
     
-} */
+}

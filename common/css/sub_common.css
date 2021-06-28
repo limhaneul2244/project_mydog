@@ -67,7 +67,7 @@
     position: relative;
 }
 #path_detail>.path_inner>ul.path>li.sub_level01>a {
-    display: inline-block;
+    display: block;
     padding: 0 35px 0 12px;
 }
 #path_detail>.path_inner>ul.path>li.sub_level01>a>.arrow_icon {
@@ -101,6 +101,12 @@
 #path_detail {}
 #path_detail>.path_inner>ul.path>li.sub_level02 {
     position: relative;
+    width: 12%;
+}
+#path_detail>.path_inner>ul.path>li.sub_level02>a {
+    display: block;
+    width: 100%;
+    padding: 0 35px 0 12px;
 }
 #path_detail>.path_inner>ul.path>li.sub_level02>a>.arrow_icon02 {
     position: absolute;
