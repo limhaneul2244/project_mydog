@@ -273,7 +273,12 @@
 /* @media screen */
 /* -----------------------------일반PC (1281~1600 / 1280px정렬)----------------------------- */
 @media screen and (min-width: 1281px) and (max-width: 1600px) {
-    
+    .header_inner {width: 1280px;}
+	#logo {width: 35%;}
+
+	
+	
+	
 }
 /* -----------------------------대형태블릿(769~1280)----------------------------- */
 @media screen and (min-width: 769px) and (max-width: 1280px) {

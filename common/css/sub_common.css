@@ -87,7 +87,7 @@
     display: none;
     width: 198px;
     height: 110px;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgba(65, 65, 65, 0.5);
 }
 .section01>li {}
 .section01>li>a {
@@ -101,12 +101,13 @@
 #path_detail {}
 #path_detail>.path_inner>ul.path>li.sub_level02 {
     position: relative;
-    width: 12%;
+    width: 18%;
 }
 #path_detail>.path_inner>ul.path>li.sub_level02>a {
     display: block;
     width: 100%;
     padding: 0 35px 0 12px;
+    text-align: left;
 }
 #path_detail>.path_inner>ul.path>li.sub_level02>a>.arrow_icon02 {
     position: absolute;
@@ -129,8 +130,17 @@
     display: none;
     width: 198px;
     height: 55px;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgba(65, 65, 65, 0.5);
 }
+/* sub2에 sub_level02높이 따로 줌 */
+.sub2 {
+    height: 220px;
+    background-color: rgba(65, 65, 65, 0.5);
+}
+.sub3 {
+    height: 165px;
+}
+
 .section02>li {}
 .section02>li>a {
     display: block;
@@ -138,4 +148,5 @@
     height: 55px;
     padding: 0 35px 0 12px;
 }
+
 

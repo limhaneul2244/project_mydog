@@ -30,9 +30,9 @@
     <script src="../mainjs/main.js"></script>
     <script src="../common/js/sub_common.js"></script>
     <!-- ↑↑↑↑ sub page tab toggle -->
-    <script src="js/sub_2.js"></script>
     <script src="../mainjs/aos.js"></script>
     <script src="../common/js/easing.js"></script>
+    <!-- ↑↑↑↑ top btn 속도 제어 JS -->
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 
@@ -76,7 +76,7 @@
                     </ul>
                 </nav>
             </div>
-            <!-- <div class="menu_box"></div> -->
+
         </div>
 <!-- header 끝 -->
         <div id="main_visual">
@@ -91,6 +91,7 @@
             <section id="section">
                 <div id="section_inner">
                     <article id="path_detail">
+                        <h3 class="hidden">상단 목차</h3>
                         <div class="path_inner">
                             <ul class="path">
                                 <li class="home">
@@ -119,7 +120,7 @@
                                         반려견문화
                                         <span class="arrow_icon02">arrow_icon</span>
                                     </a>
-                                    <ul class="section02">
+                                    <ul class="section02 sub2">
                                         <li>
                                             <a href="#"><span>마이독백과</span></a>
                                         </li>
@@ -139,142 +140,103 @@
                     </article>
 
                     <article id="tab_box">
+                        <h3 class="hidden">tab box</h3>
                         <ul class="tab_btn">
-                            <li><a href="javascript:void(0);" class="current">마이독백과</a></li>
-                            <li><a href="javascript:void(0);">입양과관리</a></li>
+                            <li><a href="javascript:void(0);" >마이독백과</a></li>
+                            <li><a href="javascript:void(0);" class="current">입양과관리</a></li>
                             <li><a href="javascript:void(0);">반려견훈련교실</a></li>
                             <li><a href="javascript:void(0);">DogShow</a></li>
                         </ul>
-                        <div class="tab_con1 tab">
+                        <!-- <div class="tab_con1 tab">
                             <div class="sub1_bg">
-                                <div class="summary_inner">
-                                    <div class="dog_img">
-                                        <ul class="summary">
-                                            <li class="sum_txt"><span class="point_txt">01</span> 보건복지가족부 인증을 받은 안내견 양성기관</li>
-                                            <li class="sum_txt"><span class="point_txt">02</span> IGDF(세계안내견협회) 정회원학교</li>
-                                            <li class="sum_txt"><span class="point_txt">03</span> 1994년 첫 안내견 배출이후 선진 훈련기법과 체계적인 관리 진행</li>
-                                        </ul>
-                                    </div>
-                                    <div class="Bdog_img">
-                                        <ul class="summary_left">
-                                            <li class="sum_txt"><span class="point_txt">04</span> 매년 12~15두 안내견 시각장애인에게 무상분양</li>
-                                            <li class="sum_txt"><span class="point_txt">05</span> 안내견 번식부터 은퇴까지 ‘퍼피워커’등의 자원봉사자 참여확대 </li>
-                                        </ul>
-                                    </div>
-                                    <div class="girl_img" data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
-                                        <ul class="summary">
-                                            <li class="sum_txt"><span class="point_txt">06</span> 생명존중과 동물애호 사상 전파</li>
-                                            <li class="sum_txt"><span class="point_txt">07</span> 장애인 인식 및 제도 개선을 위한 ‘장애인 복지법’ 개정 추진</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <div class="summary_inner"></div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="tab_con2 tab">
                             <div class="tab_con2_inner">
-                                <div class="sub2_history clear">
-                                    <div class="black_bg">
-                                        <div class="history_txt">삼성화재 안내견학교<br>과거와 현재</div>
+                                <div class="careful_bg">
+                                    <div class="careful_inner">
+                                        <h4 class="sub_txt">분양장소별 주의사항</h4>
+                                        <ul class="careful_item">
+                                            <li class="careful00">
+                                                <span>
+                                                    개의 종류 및 상태등에 대한<br>
+                                                    차이가 크므로<br>여러곳을 돌아보는것이 좋습니다.
+                                                </span>
+                                            </li>
+                                            <li class="careful01">
+                                                <span>
+                                                    가족이나 친구로부터<br>
+                                                    교육받은 개를 얻어서 키우는것도<br>
+                                                    좋은 방법입니다.
+                                                </span>
+                                            </li>
+                                            <li class="careful02">
+                                                <span>
+                                                    유기견 센터에서 입양하기로<br>
+                                                    결정했다면 많은정보를 얻어야합니다.
+                                                    (건강,예방접종등)
+                                                </span>
+                                            </li>
+                                            <li class="careful03">
+                                                <span>
+                                                    반려동물판매점, 대형사육장은<br>
+                                                    질병감염이 쉬우므로 건강상태를<br>
+                                                    꼼꼼히 살펴보아야 합니다.
+                                                </span>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="samsung_history">
-                                    <div class="history_wrap">
-                                        <span class="tit_year">2017</span>
-                                        <ul>
-                                            <li>
-                                                <span class="tit">11</span>
-                                                <span class="txt">안내견 누적분양 200두</span>
-                                            </li>
-                                        </ul>
-                                        <span class="tit_year">2016</span>
-                                        <ul>
-                                            <li>
-                                                <span class="tit">04</span>
-                                                <span class="txt">안내견 드라마 “퍼펙트 센스”방영(SBS)</span>
-                                            </li>
-                                        </ul>
-                                        <span class="tit_year">2011</span>
-                                        <ul>
-                                            <li>
-                                                <span class="tit">09</span>
-                                                <span class="txt">안내견 드라마 “위대한 선물”방영(SBS)</span>
-                                            </li>
-                                        </ul>
-                                        <span class="tit_year">2010</span>
-                                        <ul>
-                                            <li>
-                                                <span class="tit">04</span>
-                                                <span class="txt">일본 관서맹도견협회 기술연수 제공</span>
-                                            </li>
-                                        </ul>
-                                        <span class="tit_year">2009</span>
-                                        <ul>
-                                            <li>
-                                                <span class="tit">02</span>
-                                                <span class="txt">대만 도맹견협회 기술연수 제공</span>
-                                            </li>
-                                        </ul>
-                                        <span class="tit_year">2007</span>
-                                        <ul>
-                                            <li>
-                                                <span class="tit">03</span>
-                                                <span class="txt">안내견 누적분양 100두</span>
-                                            </li>
-                                        </ul>
-                                        <span class="tit_year">2006</span>
-                                        <ul>
-                                            <li>
-                                                <span class="tit">11</span>
-                                                <span class="txt">제1회 맹학생 진로개발 캠프 개최</span>
-                                            </li>
-                                        </ul>
-                                        <span class="tit_year">2005</span>
-                                        <ul>
-                                            <li>
-                                                <span class="tit">01</span>
-                                                <span class="txt">안내견드라마 “내사랑 토람이”방영(SBS)</span>
-                                            </li>
-                                        </ul>
-                                        <span class="tit_year">2002</span>
-                                        <ul>
-                                            <li>
-                                                <span class="tit">05</span>
-                                                <span class="txt">세계안내견협회 정기총회 개최</span>
-                                            </li>
-                                        </ul>
-                                        <span class="tit_year">1999</span>
-                                        <ul>
-                                            <li>
-                                                <span class="tit">01</span>
-                                                <span class="txt">세계안내견협회 정회원 승격</span>
-                                            </li>
-                                        </ul>
-                                        <span class="tit_year">1994</span>
-                                        <ul>
-                                            <li>
-                                                <span class="tit">04</span>
-                                                <span class="txt">1호 안내견 기증</span>
-                                            </li>
-                                        </ul>
-                                        <span class="tit_year">1993</span>
-                                        <ul>
-                                            <li>
-                                                <span class="tit">08</span>
-                                                <span class="txt">안내견학교 설립</span>
-                                            </li>
-                                        </ul>
+                                
+                                <div class="health">
+                                    <div class="health_bg">
+                                        <div class="health_inner">
+                                            <h4 class="sub_txt">건강관리</h4>
+                                            <ul class="health_item">
+                                                <li class="box_solid">
+                                                    <span class="head">유전질병</span>
+                                                    <span class="mid_line">
+                                                        개에게도 유전으로 인한 질병이있습니다.<br>
+                                                        피할수 없지만 잘 알아두어야 건강한 반려견과 함께 할 수 있습니다.
+                                                    </span>
+                                                    <span class="more_btn"><a href="#">more</a></span>
+                                                </li>
+                                                <li class="box_solid">
+                                                    <span class="head">일반질병</span>
+                                                    <span class="mid_line">
+                                                        개가 걸리기 쉬운질병에 대한 정보를<br>
+                                                        확인해서 예방하는 것이 최고의 치료방법입니다.
+                                                    </span>
+                                                    <span class="more_btn"><a href="#">more</a></span>
+                                                </li>
+                                                <li class="box_solid">
+                                                    <span class="head">증상별질병과 해결방법</span>
+                                                    <span class="mid_line">
+                                                        평소 반려견을 잘 관찰해<br>건강에 문제가 있는지 확인하는 습관이 중요합니다.
+                                                    </span>
+                                                    <span class="more_btn"><a href="#">more</a></span>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- <div class="tab_con3 tab">
+                            <div class="tab_con3_inner"></div>
+                        </div>
+                        <div class="tab_con4 tab">
+                            <div class="tab_con4_inner"></div>
+                        </div> -->
                     </article>
                 </div> 
             </section>
         </div>
 <!-- container 끝 -->
-        <div id="footer clear">
+        <div id="footer">
             <h2 class="hidden">footer</h2>
-            <div class="footer_inner">ㅠ
+            <div class="footer_inner">
                 <div class="footer_top">
                     <ul>
                         <li><a href="https://mydog.samsung.com/kor/global/private.do" target="_blank">개인정보처리방침</a></li>
@@ -298,7 +260,7 @@
                         <div class="footer_logo_icon">
                             <span><a href="../index.html">footer logo</a></span>
                         </div>
-                    </div>ㅁ
+                    </div>
                     <div class="footer_infor">
                         <address>
                             <span>
@@ -322,7 +284,6 @@
     <script>
         AOS.init();
     </script>
-    <!-- aos 효과 끝 -->
 </body>
 
 </html>

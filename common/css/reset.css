@@ -75,6 +75,13 @@ a:visited{
 	color: #000;
 }
 
+.sub_txt {
+	width: 100%;
+	font-size: 35px;
+	text-align: center;
+	padding: 2% 0;
+}
+
 /* -----------------------skipNav----------------------- */
 #skip_nav {
 	position: relative;
