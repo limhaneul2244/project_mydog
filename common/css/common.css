@@ -12,26 +12,26 @@
 	position: fixed;
 	width: 100%;
 	height: 73px;
-	z-index: 200;
+	z-index: 600;
 	background-color: #ffffff;
 }
 
 #container {
 	position: relative;
 	width: 100%;
-	z-index: 80;
+	z-index: 400;
 }
 
 #footer {
 	width: 100%;
 	height: 200px;
-	z-index: 40;
+	z-index: 200;
 }
 
 /*-----------------------header-----------------------*/
 
 .header_inner {
-	width: 1280px;
+	width: 1600px;
 	height: 73px;
 	margin: 0 auto;
 	text-align: center;
@@ -43,20 +43,19 @@
 	width: 30%;
 }
 
-#logo>span {
+#logo>a {
 	text-indent: -9999px;
-	width: 181px;
-	height: 73px;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
-#logo>span>a {
 	display: inline-block;
 	width: 181px;
 	height: 73px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 	background-image: url(../images/mydog_logo.PNG);
 }
+.m_nav_icon {display: none;}
+.m_nav_icon>a {}
+.m_nav_icon>a>i {}
 
 
 #gnb {
@@ -198,7 +197,6 @@
 	position: absolute;
 	top: 28px;
 	right: 100px;
-	float: right;
 	width: 200px;
 	box-sizing: border-box;
 }
@@ -276,19 +274,51 @@
     .header_inner {width: 1280px;}
 	#logo {width: 35%;}
 
-	
-	
+	.footer_inner {width: 1280px; margin: 0 auto;}
+	.footer {width: 100%;}
+
+	.footer_right {right: 180px;}
+	.footer>p {width: 1280px;}
 	
 }
 /* -----------------------------대형태블릿(769~1280)----------------------------- */
 @media screen and (min-width: 769px) and (max-width: 1280px) {
-    
+	.header_inner {width: 100%;}
+	.inner_box {display: flex; flex-flow: row-reverse nowrap; justify-content: space-between;width: 100vw;}
+	#logo {float: none; width: 95vw;}
+	#logo>a {display: block;width: 100vw;background-repeat: no-repeat;background-position: center;background-size: contain;}
+	.m_nav_icon {display: block; width: 100%; height: 73px; padding: 2% 0;}
+	.m_nav_icon>a {display: block;}
+	.m_nav_icon>a>i {display: block; font-weight: bold; font-size: 2rem;}
+	.menu_bg {position: fixed;top: 0;left: 0;width: 100%;z-index: 480;background: #000;opacity: 0.5;}
+	
+	#gnb {display: fixed;top: 0; left: 0; width: 80%; z-index: 500; background-color: rgb(255, 255, 255);}
+	#gnb>ul.main_menu {display: none; flex-flow: column wrap; width: 100%; color: #000;}
+	#gnb>ul.main_menu>li {float: none;}
+	#gnb>ul.main_menu>li a.depth {display: block; width: 100%;}
+
+	ul.sub_menu {width: 85%;}
+	ul.sub_menu li {width: 100%;}
+	ul.sub_menu li a {display: block; width: 100%;}
+	#vid {display: none;}
+
+	 
 }
 /* -----------------------------중형태블릿(415~768)----------------------------- */
 @media screen and (min-width: 415px) and (max-width: 768px) {
-    
+    .inner_box {display: flex; flex-flow: row-reverse nowrap; justify-content: space-between;width: 100vw;}
+	#logo {width: 97vw;}
+	#logo>a {display: block;width: 100vw;height: 73px;background-repeat: no-repeat;background-position: center;background-size: contain;}
+	.m_nav_icon {display: block; width: 5%; margin: 0 auto; }
+	.m_nav_icon>a {display: block; width: 50%; height: 73px;  margin: 0 auto;}
+	.m_nav_icon>a>i {display: block; width: 100%; height: 73px; line-height: 73px;}
+	.menu_bg {position: fixed;top: 0;left: 0;width: 100%;z-index: 280;background: #000;opacity: 0.5;}
+
+	#gnb {display: none;}
+	#vid {display: none;}
 }
 /* -----------------------------모바일(~414px)----------------------------- */
 @media screen and (max-width: 414px) {
-    
+	.m_slider {display: none;}
+    #vid {display: none;}
 }

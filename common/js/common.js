@@ -1,6 +1,6 @@
 //mydog&samsung
 
-//main_gnb slide
+//main_gnb slide 와이드~일반PC hover했을때 sub_menu 내려옴 
 $(document).ready(function(){
     $("#gnb").hover(
     function(){
@@ -10,6 +10,41 @@ $(document).ready(function(){
     function(){
         $('.sub_menu').stop().fadeOut('fast');
         $(".menu_box").stop().slideUp();
+    });
+});
+
+
+// m_nav_icon
+$(document).ready(function () {
+    $(".m_nav_icon").click(function () {
+        let documentHeight = $(document).height(); //마크업한 높이
+        let windowHeight = $(window).height(); //기기로 접속했을때의 높이
+
+        $(".menu_bg").css('height', documentHeight); //마크업의 높이만큼 h가짐 (도큐먼트는 문서라는 뜻)
+        $("#gnb").css('height', windowHeight); //접속하는 기기별 높이만큼만 h 가짐
+
+        $(".menu_bg").show(); //menu_bg 보임
+        $("#gnb").animate({
+            left: '-100%',
+            opacity: '1'
+        }, "normal"); //#gnb에 왼쪽에서 날아와서 보이도록
+    });
+    $(".close_btn, .menu_bg").click(function () { //.close_btn, .menu_bg 다시 클릭하면
+        $(".menu_bg").hide(); //menu_bg 숨김
+        $("#gnb").animate({
+            left: '0',
+            opacity: '0'
+        }, "fast"); //gnb 다시 왼쪽으로 들어감
+    });
+});
+
+
+
+//태블릿, 모바일 main_menu
+$(document).ready(function () {
+    $(".depth").click(function () { //depth 클릭
+        $(".sub_menu").hide(); //sub_menu 숨기고 시작
+        $(this).next(".sub_menu").slideDown('slow'); //클릭한 this의 sub_menu 다음에 있는(next) 애들만 보여라
     });
 });
 

@@ -14,12 +14,12 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="app_icon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&family=Noto+Sans+KR&family=Open+Sans&family=Roboto&family=Stylish&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <!-- bxslider 연결 -->
     <link rel="stylesheet" href="common/css/reset.css">
     <link rel="stylesheet" href="common/css/common.css">
     <link rel="stylesheet" href="maincss/main.css">
     <link rel="stylesheet" href="maincss/aos.css">
+    <link rel="stylesheet" href="common/css/rsslider.css">
+    <!-- rsslider 연결 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -36,7 +36,9 @@
     <!-- ↑↑↑↑ top btn 속도 제어 JS -->
     <script src="mainjs/mainpopup.js"></script>
     <!-- ↑↑↑JS팝업창 -->
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="common/js/responsiveslide_call.js"></script>
+    <script src="common/js/responsiveslides.min.js"></script>
+    <!-- ↑↑↑↑ rsslide JS 2개 -->
 </head>
 
 <body>
@@ -48,9 +50,11 @@
         <div id="header">
             <h2 class="hidden">header</h2>
             <div class="header_inner">
-                <h1 id="logo">
-                    <span><a href="index.html">삼성마이독 로고</a></span>
-                </h1>
+                <div class="inner_box">
+                    <h1 id="logo"><a href="../index.html">삼성마이독 로고</a></h1>
+                    <span class="m_nav_icon"><a href="#"><i class="fas fa-align-left"></i></a></span>
+                    <div class="menu_bg"></div>
+                </div> 
                 <nav id="gnb">
                     <ul class="main_menu">
                         <li><a href="sub1/sub1-1.html" class="depth">MYDOG&SAMSUNG</a>
@@ -90,20 +94,42 @@
                     <source src="video/dog_video.mp4" type="video/mp4">
                     <strong>Your browser does not support the video tag.</strong>
                 </video>
+
+                <div class="m_slider">
+                    <h3 class="hidden">대형,중형 슬라이드 img</h3>
+                    <div class="callbacks_container">
+                        <ul id="m_visual_slider" class="rslides">
+                            <li>
+                                <img src="images/mainVisual_01.jpg" alt="강아지 이미지">
+                                <p class="visual_txt00">안내견과 함께하는 사회공헌 활동에 여러분도 참여하실 수 있습니다.</p>
+                            </li>
+                            <li>
+                                <img src="images/mainVisual_02.jpg" alt="소녀와 같이 있는 이미지">
+                                <p class="visual_txt01">안내견은 시각장애인의 동반자가 되어 안전한 보행을 돕습니다.</p>
+                            </li>
+                            <li>
+                                <img src="images/mainVisual_03.png" alt="바다를 배경으로 한 강아지 이미지">
+                                <p class="visual_txt02">안내견보다 반려견으로 살아갈 개와<br>평생을 함께 할 가정을 찾습니다.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
             </section>
 
             <section id="section">
                 <article id="main_notice">
                     <h3 class="hidden">NOTICE</h3>
                     <div id="srolling"></div>
-                    <div id="notice_box" >
-                        <a class="headnews" href="https://mydog.samsung.com/">
+                    <div id="notice_box">
+                        <a class="headnews" href="#">
                             <span class="notice_txt"> [NOTICE] 외부 후원 및 관계대상자 영리활동 불가안내</span>
                         </a>
-                        <a class="headnews" href="https://mydog.samsung.com/">
+                        <a class="headnews" href="#">
                             <span class="notice_txt"> [NOTICE] 코로나19에 따른 견사 자원봉사 활동 잠정 연기</span>
                         </a>
-                        <a class="headnews" href="https://mydog.samsung.com/">
+                        <a class="headnews" href="#">
                             <span class="notice_txt"> [NOTICE] 코로나19로 인한 안내견학교 내방 안내</span>
                         </a>
                     </div>
@@ -146,6 +172,8 @@
                             </div>
                         </div>
                     </div>
+
+
                 </article>
 
                 <article id="mydog_apply">
@@ -206,17 +234,14 @@
 
                 <article id="dogshow">
                     <h3 class="hidden">dogshow</h3>
-                    <div class="dogshow_bg">
-                        <div class="dogshow_wrap">
-                            <div class="dogshow_txt">
-                                <span>Dog Show</span>
-                                <span>세계 다양한 견공들이 펼치는 Dog Show의 모든것</span>
-                            </div>
-                            <div class="df_btn">
-                                <div class="df_btn_wrap">
-                                    <a href="javascript:void(0)">바로가기</a>
-                                </div>
-                            </div>
+                    <div class="dogshow_bg"></div>
+                    <div class="dogshow_wrap">
+                        <div class="dogshow_txt">
+                            <span>Dog Show</span>
+                            <span>세계 다양한 견공들이 펼치는 Dog Show의 모든것</span>
+                        </div>
+                        <div class="df_btn">
+                            <a href="javascript:void(0)">바로가기</a>
                         </div>
                     </div>
                 </article>
@@ -230,9 +255,7 @@
                                 <span class="flower_normal">사랑을 나누고 떠난 견공들을 추모해주세요.</span>
                             </div>
                             <div class="df_btn flower_btn">
-                                <div class="df_btn_wrap">
-                                    <a href="javascript:void(0)">바로가기</a>
-                                </div>
+                                <a href="javascript:void(0)">바로가기</a>
                             </div>
                         </div>
                     </div>
@@ -311,7 +334,7 @@
     </div>
 
     <!-- 팝업(모달)창 -->
-    <div id="showimage" style="position: absolute;top: 200px; left: 100px; width: 322px; height: 322px; z-index: 150;">
+    <!-- <div id="showimage" style="position: absolute;top: 200px; left: 100px; width: 322px; height: 322px; z-index: 150;">
         <div class="pop_img"><img src="popup/popup_noQR.png" alt="상업적 목적이 아닌 개인포트폴리오용도로 제작되었다는 의미가 담긴 이미지 그 출처가 따로 있음을 밝힘"></div>
         <form action="" style="font-size: 12px; text-align: center; background-color: rgb(131, 131, 131);">
             <input type="checkbox" id="Notice" name="Notice" titel="오늘은 이 창을 열지 않음 선택 상자">
@@ -329,7 +352,7 @@
                 hidebox();
             }
         </script>
-    </div>
+    </div> -->
     <!-- <script>
         $(document).ready(function(){
         $('.bxslider').bxSlider({
