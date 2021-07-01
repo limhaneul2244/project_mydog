@@ -56,6 +56,8 @@
     height: 400px;
     margin: 0 auto;
 }
+/*-----------------------#m_mydog_infor-----------------------*/
+#m_mydog_infor {display: none;}
 /*-----------------------.mydog_bold-----------------------*/
 .main_txt>.mydog_bold {
     display: block;
@@ -305,6 +307,9 @@
     padding: 60px;
 }
 
+/* .m_apply */
+#m_apply {display: none;}
+
 /*-----------------------#middle_txt-----------------------*/
 #middle_txt {
     display: block;
@@ -336,7 +341,8 @@
 .df_btn>a {display: block;width: 100%;height: 34px;line-height: 34px;text-align: center;border: 2px solid #000;}
 
 /*-----------------------#flower-----------------------*/
-
+.remember_bg {display: none;}
+.remember_wrap {display: none;}
 #flower {width: 100%;height: 499px;padding: 50px 0;}
 .flower_bg {width: 100%;height: 499px;background-position: center;
     background-size: contain;background-repeat: no-repeat;background-image: url(../images/flower_bg.png);}
@@ -502,6 +508,9 @@
     .address_sub_txt {display: block;font-size: 1rem;margin-bottom: 60px;line-height: 2;}
     .address_btn>a {border-bottom: 3px solid #000;}   
 
+    /* .m_apply */
+    #m_apply {display: none;}
+        
 
 
 
@@ -516,8 +525,12 @@
     .m_slider>ul.rslides li {width: 100vw;}
     .m_slider>ul.rslides img {display: block; width: 100vw; background-size: contain;}
     #main_notice {display: none;}
+    #mydog_apply {display: none;}
+    
 
-    #m_visual_slider p {position: absolute;display: block;}
+
+
+    #m_visual_slider span {position: absolute;display: block;}
     .visual_txt00 {
         top: 455px;
         left: 485px;
@@ -553,11 +566,101 @@
         font-size: 2rem;
         background-color: rgb(247, 247, 247, 0.5);
     }
+
+    /* 기업형 숨김, 모바일 #m_mydog_infor 정보란 생성 */
+    #mydog_infor {display: none;}
+    #m_mydog_infor {display: flex; flex-flow: row nowrap; width: 90%; margin: 2.5% auto;}
+    #m_mydog_infor div {width: 100%; background-repeat: no-repeat; background-position: center; background-size: contain; }
+    .mydog {background-image: url(../images/m_mydog&sansung.png); margin-right: 5%;}
+    .blind {background-image: url(../images/m_blind.png);}
+    .more_btn {display: block; width: 30%; border: 2px solid #fff; margin-top: 60%;}
+    .more_btn a {display: block; width: 100%; line-height: 40px; color: #fff; font-weight: bold; text-align: center;}
+    
+    /*-----------------------.m_apply -----------------------*/
+    #m_apply {display: flex; justify-content: space-around; margin: 2% auto; height: auto;}
+    .apply_lft {width: 50vw;}
+    .apply_lft div {background-size: contain; background-position: center; background-repeat: no-repeat;}
+    .apply_lft00 {width: 48vw; height: 319px; margin: 0 auto;  margin-bottom: 5%; background-image: url(../images/apply_lft00.png);}
+    .apply_lft01 {width: 48vw; height: 644px; margin: 0 auto;  background-image: url(../images/apply_lft01.png);}
+
+    .apply_rgt {width: 50vw;}
+    .apply_rgt div {background-size: contain; background-position: center; background-repeat: no-repeat;}
+    .apply_rgt00 {width: 48vw; height: 644px; margin: 0 auto;  margin-bottom: 5%;background-image: url(../images/apply_rgt00.png);}
+    .apply_rgt01 {width: 48vw; height: 319px; margin: 0 auto; background-image: url(../images/apply_rgt01.png);}
+    #m_apply a {display: block; text-indent: -9999px;width: 100%;}
+
+    /*-----------------------#middle_txt-----------------------*/
+    #middle_txt {width: 100vw; margin: 2.5% auto;}
+    .mydog_samsung_img {display: block;text-indent: -9999px;width: 100vw;height: 400px; background-position: right bottom;
+        background-repeat: no-repeat;background-attachment:local;background-size: cover;background-image: url(../images/m_samsung_txt01.png);}
+
+    /*-----------------------#dogshow-----------------------*/
+
+    #dogshow {display: flex;flex-flow: row nowrap;justify-content: space-around;width: 100%; margin-bottom: 2%;}
+    .dogshow_bg {display: block;width: 40vw;height: 529px;background-position: center; background-size: contain;
+        background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
+    .dogshow_wrap {width: 47vw;}
+    .dogshow_txt {width: 100%;}
+    .dogshow_txt>span {display: block;}
+    .dogshow_txt>span:first-child {width: 100%;padding-top: 23%;font-size: 3rem;font-weight: bold;
+        font-family: 'Roboto', sans-serif; text-shadow: none;}
+    .dogshow_txt>span:last-child {display: inline-block; width: 55%; line-height: 1.2; font-size: 1.5rem;padding-top: 90px;}
+    .df_btn {width: 20%; padding-top: 35%;}
+    .df_btn>a {display: block;width: 100%;height: 34px;line-height: 34px;text-align: center;border: 2px solid #000;}
+
+    /*-----------------------#flower-----------------------*/
+
+    #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%;padding: 0; margin-bottom: 7%;}
+    .flower_bg {display: none;}
+    .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 529px;background-position: center;
+        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.jpg);}
+    .remember_wrap {float: none;display: block; width: 47%;}
+    .remember_txt {width: 100%; padding-top: 0;}
+    .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 3rem;padding-top: 23%;}
+    .remember_txt>.remember_normal {display: block;font-size: 1.5rem;padding-top: 90px;}
+    .remember_btn {width: 20%; padding-top: 20%;}
+
+    /*-----------------------#main_address-----------------------*/
+    #main_address {position: relative;width: 100%; margin-bottom: 2.5%;}
+    .main_gradation {display: none;}
+    .gradation_dog {display: none;}
+
+    .main_add_wrap {position:unset; overflow: hidden; display: flex; justify-content: space-around; width: 100%;}
+    .infor_add_box {float: left;width: 22vw;height: 200px;margin-right: 2.5%;padding: 30px; margin: 0 auto; }
+    .infor_add_box:nth-child(1) {background-color: #666;}
+    .infor_add_box:nth-child(2) {background-color: #a65a5a;}
+    .infor_add_box:nth-child(3) {background-color: #6eb5c7;}
+    .address_txt {display: block;font-weight: bold;font-size: 2rem;margin: 18px 0;}
+
+    .infor_add_box>.phone {font-size: 1.5rem;margin-bottom: 73px;}
+    .address_sub_txt {display: block;font-size: 1rem;margin-bottom: 60px;line-height: 2;}
+    .address_btn>a {border-bottom: 3px solid #000;}   
+
+
+
+
+
 }
 /* -----------------------------중형태블릿(415~768)----------------------------- */
 @media screen and (min-width: 415px) and (max-width: 768px) {
-   
+    /* 숨김: 기업형 한줄 알림, 인포메이션란 */
     #main_notice {display: none;}
+    #mydog_infor {display: none;}
+    #mydog_apply {display: none;}
+
+
+
+    .m_slider {position: relative;display: block; width: 100vw;}
+    .m_slider>ul.rslides {width: 100vw;}
+    .m_slider>ul.rslides li {width: 100vw;}
+    .m_slider>ul.rslides img {display: block; width: 100vw; background-size: contain;}
+
+    #m_mydog_infor {display: flex; flex-flow: column nowrap; justify-content: space-around; width: 90%; height:250px;margin: 0 auto;}
+    #m_mydog_infor div {width: 100%; background-repeat: no-repeat; background-position: center; background-size: contain; }
+    .mydog {background-image: url(../images/m_mydog&sansung.png);}
+    .blind {background-image: url(../images/m_blind.png);}
+    #m_mydog_infor .more_btn {display: block; width: 30%; border: 2px solid #fff; margin-top: 50%;}
+    #m_mydog_infor .more_btn a {display: block; width: 100%; line-height: 40px; color: #fff; font-weight: bold; text-align: center;}
 }
 /* -----------------------------모바일(~414px)----------------------------- */
 @media screen and (max-width: 414px) {
