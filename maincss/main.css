@@ -2,241 +2,69 @@
 
 /*-----------------------main_container>#main_visual-----------------------*/
 
-#main_visual {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    padding-top: 73px;
-    margin: 0 auto;
-}
+#main_visual {overflow: hidden;position: relative;width: 100%;padding-top: 73px;margin: 0 auto;}
 #vid {width: 100%;}
 .m_slider {display: none;}
+.mobile_slider {display: none;}
+
 /*-----------------------#main_notice-----------------------*/
-#section {
-    width: 100%;
-    margin: 0 auto;
-}
-#main_notice {
-    overflow: hidden;
-    width: 1600px;
-    height: 80px;
-    margin: 0 auto;
-}
-#srolling {
-    position: relative;
-    overflow: hidden;
-    width: 80%;
-    height: 60px;
-    line-height: 60px;
-    margin: 10px auto;
-    border: 3px solid rgb(185, 185, 185);
-}
-.notice_box {
-    display: none;
-}
+#section {width: 100%;margin: 0 auto;}
+#main_notice {overflow: hidden;width: 1600px;height: 80px;margin: 0 auto;}
+#srolling {position: relative;overflow: hidden;width: 80%;height: 60px;line-height: 60px;margin: 10px auto;border: 3px solid rgb(185, 185, 185);}
+.notice_box {display: none;}
 .notice_box>.headnews {}
 .notice_box>.headnews>a {}
-#main_notice .notice_txt {
-    display: block;
-    width: 100%;
-    font-size: 1.5rem;
-}
+#main_notice .notice_txt {display: block;width: 100%;font-size: 1.5rem;}
 
 /*-----------------------#mydog_infor_top-----------------------*/
 
-#mydog_infor {
-    width: 1000px;
-    height: 700px;
-    margin: 0px auto;
-    margin-top: 60px;
-    background-color: #faf5e8;
-}
-#mydog_infor>.mydog_infor_top {
-    width: 100%;
-    height: 400px;
-    margin: 0 auto;
-}
+#mydog_infor {width: 1000px;height: 700px;margin: 0px auto;margin-top: 60px;background-color: #faf5e8;}
+#mydog_infor>.mydog_infor_top {width: 100%;height: 400px;margin: 0 auto;}
 /*-----------------------#m_mydog_infor-----------------------*/
 #m_mydog_infor {display: none;}
 /*-----------------------.mydog_bold-----------------------*/
-.main_txt>.mydog_bold {
-    display: block;
-    width: 100%;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    padding: 30px 0;
-}
+.main_txt>.mydog_bold {display: block;width: 100%;height: 80px;line-height: 80px;text-align: center;
+    font-size: 3rem;font-weight: bold;padding: 30px 0;}
 /* ----------------------------------------------------------- */
 
-.mydog_detail_infor {
-    position: relative;
-    width: 850px;
-    height: 120px;
-    margin: 0 auto;
-    text-align: center;
-    /* clear: both;
-    content: ''; */
-}
-.infor_txt_wrap {
-    position: relative;
-    float: left;
-    width: 270px;
-    height: 150px;
-    margin-right: 20px;
-}
-.infor_txt_wrap:last-child {
-    margin-right: 0;
-}
-.point_red_txt {
-    display: inline;
-    width: 270px;
-    height: 65px;
-    color: red;
-    font-size: 3.5rem;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-}
-
-.basic_txt {
-    display: block;
-    width: 270px;
-    height: 50px;
-    font-size: 1.5rem;
-    padding-top: 10px;
-    clear: both;
-}
+.mydog_detail_infor {position: relative;width: 850px;height: 120px;margin: 0 auto;text-align: center;}
+.infor_txt_wrap {position: relative;float: left;width: 270px;height: 150px;margin-right: 20px;}
+.infor_txt_wrap:last-child {margin-right: 0;}
+.point_red_txt {display: inline;width: 270px;height: 65px;color: rgb(207, 45, 45);font-size: 3.5rem;font-weight: bold;font-family: 'Roboto', sans-serif;}
+.basic_txt {display: block;width: 270px;height: 50px;font-size: 1.5rem;padding-top: 10px;clear: both;}
 
 /* --------------------more_btn transition-------------------- */
-.more_btn {
-    width: 900px;
-    height: 36px;
-    margin: 40px auto;
-}
-.more_btn>.more_btn_wrap {
-    display: block;
-    width: 106px;
-    height: 36px;
-    margin: 0 auto;
-    transition-property: width, height, background-color;
-    transition-duration: 0.2s;
-    transition-timing-function: linear;
-    transition-delay: 0.1s;
-}
-
-.more_btn_wrap:hover {
-    width: 106px;
-    height: 36px;
-    background-color: rgb(211, 130, 24, 0.5);
-}
-
-.more_btn>.more_btn_wrap>a {
-    display: block;
-    width: 106px;
-    height: 36px;
-    line-height: 36px;
-    text-align: center;
-    border: 2px solid #000;
-}
-
-.more_btn>.more_btn_wrap>a:hover {
-    color: #fff;
-    border: 2px solid #fff;
-}
+.more_btn {width: 900px;height: 36px;margin: 40px auto;}
+.more_btn>.more_btn_wrap {display: block;width: 106px;height: 36px;margin: 0 auto;
+    transition-property: width, height, background-color;transition-duration: 0.2s;transition-timing-function: linear;transition-delay: 0.1s;}
+.more_btn_wrap:hover {width: 106px;height: 36px;background-color: rgb(211, 130, 24, 0.5);}
+.more_btn>.more_btn_wrap>a {display: block;width: 106px;height: 36px;line-height: 36px;text-align: center;border: 2px solid #000;}
+.more_btn>.more_btn_wrap>a:hover {color: #fff;border: 2px solid #fff;}
 /* --------------------------------------------------------- */
-.small_txt_top {
-    display: inline-block;
-    font-size: 1rem;
-}
-
-.small_txt_bottom {
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    font-size: 1rem;
-}
+.small_txt_top {display: inline-block;font-size: 1rem;}
+.small_txt_bottom {display: block;margin: 20px auto;text-align: center;font-size: 1rem;}
 
 /*-----------------------#mydog_apply-----------------------*/
-#mydog_apply {
-    position: relative;
-    width: 1920px;
-    height: 3200px;
-    margin: 60px auto;
-    /* background-color: rgb(178, 153, 223); */
-}
-#mydog_apply>.apply_left_girl {
-    display: inline-block;
-    text-indent: -9999px;
-    width: 950px;
-    height: 650px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-image: url(../images/apply_left_girl.png);
-}
+#mydog_apply {position: relative;width: 1920px;height: 3200px;margin: 60px auto;}
+#mydog_apply>.apply_left_girl {display: inline-block;text-indent: -9999px;width: 950px;
+    height: 650px;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/apply_left_girl.png);}
 
-#mydog_apply>.apply_left_txt_01 {
-    float: right;
-    width: 830px;
-    height: 530px;
-    text-align: left;
-    padding: 50px;
-}
-.apply_left_txt_01>.apply_txt_bold {
-    display: block;
-    font-weight: bold;
-    font-size: 3rem;
-    margin: 60px auto;
-}
-.apply_txt_normal {
-    display: block;
-    line-height: 70px;
-    font-size: 1.5rem;
-}
+#mydog_apply>.apply_left_txt_01 {float: right;width: 830px;height: 530px;text-align: left;padding: 50px;}
+.apply_left_txt_01>.apply_txt_bold {display: block;font-weight: bold;font-size: 3rem;margin: 60px auto;}
+.apply_txt_normal {display: block;line-height: 70px;font-size: 1.5rem;}
 
 .apply_left_txt_01{}
-.apply_left_txt_01>.more_btn{
-    position: relative;
-}
-.apply_left_txt_01>.more_btn>.more_btn_wrap{
-    position: absolute;
-}
+.apply_left_txt_01>.more_btn{position: relative;}
+.apply_left_txt_01>.more_btn>.more_btn_wrap{position: absolute;}
 .apply_left_txt_01>.more_btn>.more_btn_wrap>a{}
 
 
 /* 리트리버 img2 */
-.apply_right_dog {
-    position: absolute;
-    top: 550px;
-    right: 35px;
-    text-indent: -9999px;
-    width: 848px;
-    height: 1050px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-image: url(../images/apply_right_dog.png);
-}
-.apply_right_img_txt_01 {
-    position: relative;
-    display: inline-block;
-    width: 830px;
-    height: 700px;
-    text-align: right;
-    padding: 60px;
-}
-.apply_right_img_txt_bold {
-    display: block;
-    font-weight: bold;
-    font-size: 3rem;
-    margin: 70px auto;
-}
-.apply_right_img_txt_normal {
-    display: block;
-    line-height: 70px;
-    font-size: 1.5rem;
-    /* background-color: rgb(243, 108, 108); */
-}
+.apply_right_dog {position: absolute;top: 550px;right: 35px;text-indent: -9999px;width: 848px;height: 1050px;background-position: 0 0;
+    background-repeat: no-repeat;background-image: url(../images/apply_right_dog.png);}
+.apply_right_img_txt_01 {position: relative;display: inline-block;width: 830px;height: 700px;text-align: right;padding: 60px;}
+.apply_right_img_txt_bold {display: block;font-weight: bold;font-size: 3rem;margin: 70px auto;}
+.apply_right_img_txt_normal {display: block;line-height: 70px;font-size: 1.5rem;}
 /* .apply_right_img_txt_01>.more_right_btn {
     position: relative;
 }
@@ -258,77 +86,33 @@
     color: #fff;
     border: 2px solid #fff;
 } */
+
 /* 단체견학 신청 img3 */
-.visit_img {
-    position: relative;
-    top: 60px;
-}
+.visit_img {position: relative;top: 60px;}
 /* .apply_right_img_txt_01에 po:r 찍음 */
-.apply_left_visit {
-    display: inline-block;
-    text-indent: -9999px;
-    width: 950px;
-    height: 650px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-image: url(../images/apply_left_park.png);
-}
-.visit_img>.apply_left_txt_01 {
-    float: right;
-    width: 830px;
-    height: 530px;
-    text-align: left;
-    padding: 60px;
-}
+.apply_left_visit {display: inline-block;text-indent: -9999px;width: 950px;
+    height: 650px;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/apply_left_park.png);}
+.visit_img>.apply_left_txt_01 {float: right;width: 830px;height: 530px;text-align: left;padding: 60px;}
 .visit_img>.more_btn {}
 
 
 /* 자원봉사 신청 img4 */
-.apply_right_walk {
-    position: absolute;
-    bottom: 0;
-    right: 35px;
-    display: inline-block;
-    text-indent: -9999px;
-    width: 840px;
-    height: 1030px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-image: url(../images/apply_right_walk.png);
-}
-.walk_img>.apply_right_img_txt_01 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: inline-block;
-    width: 830px;
-    height: 700px;
-    text-align: right;
-    padding: 60px;
-}
+.apply_right_walk {position: absolute;bottom: 0;right: 35px;display: inline-block;text-indent: -9999px;width: 840px;
+    height: 1030px;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/apply_right_walk.png);}
+.walk_img>.apply_right_img_txt_01 {position: absolute;left: 0;bottom: 0;display: inline-block;width: 830px;height: 700px;
+    text-align: right;padding: 60px;}
 
 /* .m_apply */
 #m_apply {display: none;}
 
 /*-----------------------#middle_txt-----------------------*/
-#middle_txt {
-    display: block;
-    width: 100%;
-    padding: 50px 0;
-}
-.mydog_samsung_img {
-    text-indent: -9999px;
-    width: 100%;
-    height: 400px;
-    margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url(../images/main_madogSamsung_txt.png);
-}
+#middle_txt {display: block;width: 100%;padding: 50px 0;}
+.mydog_samsung_img {text-indent: -9999px;width: 100%;height: 400px;margin: 0 auto;background-position: center;background-repeat: no-repeat;
+    background-attachment: fixed;background-image: url(../images/main_madogSamsung_txt.png);}
+
 /*-----------------------#dogshow-----------------------*/
 
-#dogshow {display: flex;flex-flow: row nowrap;justify-content: space-between;width: 100%;}
+#dogshow {display: flex;flex-flow: row nowrap;justify-content: space-between;width: 1920px; margin: 0 auto;}
 .dogshow_bg {position: relative;display: block;width: 50%;height: 550px;background-position: 0 0;
     background-repeat: no-repeat;background-image: url(../images/fly_dog.png);}
 .dogshow_wrap {width: 45%;height: 331px;}
@@ -343,7 +127,7 @@
 /*-----------------------#flower-----------------------*/
 .remember_bg {display: none;}
 .remember_wrap {display: none;}
-#flower {width: 100%;height: 499px;padding: 50px 0;}
+#flower {width: 1920px; height: 499px; margin: 0 auto; padding: 50px 0;}
 .flower_bg {width: 100%;height: 499px;background-position: center;
     background-size: contain;background-repeat: no-repeat;background-image: url(../images/flower_bg.png);}
 .flower_wrap {float: right;width: 900px;height: 499px;}
@@ -353,67 +137,21 @@
 .flower_btn { padding-top: 10%;}
 
 /*-----------------------#main_address-----------------------*/
-#main_address {
-    position: relative;
-    width: 1920px;
-}
+.mobile_add {display: none;}
+#main_address {position: relative;width: 1920px;margin: 0 auto;}
 
-.main_gradation {
-    position: relative;
-    display: block;
-    text-indent: -9999px;
-    width: 1920px;
-    height: 400px;
-    margin: 150px auto;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-image: url(../images/main_gradation.png);
-}
+.main_gradation {position: relative;display: block;text-indent: -9999px;width: 1920px;height: 400px;
+    margin: 150px auto;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/main_gradation.png);}
 
-.gradation_dog {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: inline-block;
-    text-indent: -9999px;
-    width: 350px;
-    height: 513px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-image: url(../images/gradation_dog.png);
-}
+.gradation_dog {position: absolute;bottom: 0;right: 0;display: inline-block;text-indent: -9999px;width: 350px;
+    height: 513px;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/gradation_dog.png);}
 
-.main_add_wrap {
-    position: absolute;
-    top: 0;
-    left: 360px;
-    width: 1280px;
-    margin: 0 auto;
-}
-.infor_add_box {
-    float: left;
-    width: 300px;
-    height: 320px;
-    margin-right: 20px;
-    padding: 40px;
-}
-.address_txt {
-    display: block;
-    font-weight: bold;
-    font-size: 2.5rem;
-    margin: 50px 0;
-}
+.main_add_wrap {position: absolute;top: 0;left: 360px;width: 1280px;margin: 0 auto;}
+.infor_add_box {float: left;width: 300px;height: 320px;margin-right: 20px;padding: 40px;}
+.address_txt {display: block;font-weight: bold;font-size: 2.5rem;margin: 50px 0;}
 
-.infor_add_box>.phone {
-    font-size: 2.5rem;
-    margin-bottom: 45px;
-}
-.address_sub_txt {
-    display: block;
-    font-size: 1rem;
-    margin-bottom: 60px;
-    line-height: 2;
-}
+.infor_add_box>.phone {font-size: 2.5rem;margin-bottom: 45px;}
+.address_sub_txt {display: block;font-size: 1rem;margin-bottom: 60px;line-height: 2;}
 
 .address_btn {display: block;}
 .address_btn>a {display: inline-block;border-bottom: 3px solid #000;}
@@ -510,11 +248,6 @@
 
     /* .m_apply */
     #m_apply {display: none;}
-        
-
-
-
-
 }
 
 /* -----------------------------대형태블릿(769~1280)----------------------------- */
@@ -527,9 +260,6 @@
     #main_notice {display: none;}
     #mydog_apply {display: none;}
     
-
-
-
     #m_visual_slider span {position: absolute;display: block;}
     .visual_txt00 {
         top: 455px;
@@ -604,7 +334,7 @@
     .dogshow_txt>span {display: block;}
     .dogshow_txt>span:first-child {width: 100%;padding-top: 23%;font-size: 3rem;font-weight: bold;
         font-family: 'Roboto', sans-serif; text-shadow: none;}
-    .dogshow_txt>span:last-child {display: inline-block; width: 55%; line-height: 1.2; font-size: 1.5rem;padding-top: 90px;}
+    .dogshow_txt>span:last-child {display: inline-block; width: 57%; line-height: 1.2; font-size: 1.5rem;padding-top: 90px;}
     .df_btn {width: 20%; padding-top: 35%;}
     .df_btn>a {display: block;width: 100%;height: 34px;line-height: 34px;text-align: center;border: 2px solid #000;}
 
@@ -617,7 +347,7 @@
     .remember_wrap {float: none;display: block; width: 47%;}
     .remember_txt {width: 100%; padding-top: 0;}
     .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 3rem;padding-top: 23%;}
-    .remember_txt>.remember_normal {display: block;font-size: 1.5rem;padding-top: 90px;}
+    .remember_txt>.remember_normal {display: block;width: 62%; line-height: 1.2;font-size: 1.5rem;padding-top: 90px;}
     .remember_btn {width: 20%; padding-top: 20%;}
 
     /*-----------------------#main_address-----------------------*/
@@ -633,38 +363,336 @@
     .address_txt {display: block;font-weight: bold;font-size: 2rem;margin: 18px 0;}
 
     .infor_add_box>.phone {font-size: 1.5rem;margin-bottom: 73px;}
-    .address_sub_txt {display: block;font-size: 1rem;margin-bottom: 60px;line-height: 2;}
+    .address_sub_txt {display: block;font-size: 1rem;margin-bottom: 26px;line-height: 2;}
     .address_btn>a {border-bottom: 3px solid #000;}   
 
-
-
-
-
 }
+
+
+
+
 /* -----------------------------중형태블릿(415~768)----------------------------- */
 @media screen and (min-width: 415px) and (max-width: 768px) {
-    /* 숨김: 기업형 한줄 알림, 인포메이션란 */
-    #main_notice {display: none;}
-    #mydog_infor {display: none;}
-    #mydog_apply {display: none;}
-
-
-
+    /* 대형~중형까지 메인슬라이드 */
     .m_slider {position: relative;display: block; width: 100vw;}
     .m_slider>ul.rslides {width: 100vw;}
     .m_slider>ul.rslides li {width: 100vw;}
     .m_slider>ul.rslides img {display: block; width: 100vw; background-size: contain;}
+    #main_notice {display: none;}
+    #mydog_apply {display: none;}
+    
+    #m_visual_slider span {position: absolute;display: block;}
+    .visual_txt00 {
+        top: 455px;
+        left: 485px;
+        width: 950px;
+        height: 150px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 150px;
+        font-size: 2rem;
+        background-color: rgb(247, 247, 247, 0.5);
+    }
+    .visual_txt01 {
+        top: 200px;
+        left: 485px;
+        width: 950px;
+        height: 150px;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        line-height: 150px;
+        font-size: 2rem;
+        background-color: rgb(247, 247, 247, 0.5);
+    }
+    .visual_txt02 {
+        top: 320px;
+        left: 100px;
+        width: 600px;
+        height: 230px;
+        line-height: 3.5;
+        color: #3a3a3a;
+        font-weight: bold;
+        text-align: left;
+        font-size: 2rem;
+        background-color: rgb(247, 247, 247, 0.5);
+    }
 
-    #m_mydog_infor {display: flex; flex-flow: column nowrap; justify-content: space-around; width: 90%; height:250px;margin: 0 auto;}
+    /* 기업형 숨김, 모바일 #m_mydog_infor 정보란 생성 */
+    #mydog_infor {display: none;}
+    #m_mydog_infor {display: flex; flex-flow: row wrap; width: 80%; margin: 2.5% auto;}
     #m_mydog_infor div {width: 100%; background-repeat: no-repeat; background-position: center; background-size: contain; }
-    .mydog {background-image: url(../images/m_mydog&sansung.png);}
+    .mydog {background-image: url(../images/m_mydog&sansung.png); margin-right: 0;}
     .blind {background-image: url(../images/m_blind.png);}
-    #m_mydog_infor .more_btn {display: block; width: 30%; border: 2px solid #fff; margin-top: 50%;}
-    #m_mydog_infor .more_btn a {display: block; width: 100%; line-height: 40px; color: #fff; font-weight: bold; text-align: center;}
+    .more_btn {display: block; width: 30%; border: 2px solid #fff; margin-top: 60%;}
+    .more_btn a {display: block; width: 100%; line-height: 40px; color: #fff; font-weight: bold; text-align: center;}
+    
+    /*-----------------------.m_apply -----------------------*/
+    #m_apply {display: flex; justify-content: space-around; margin: 2% auto; height: auto;}
+    .apply_lft {width: 50vw;}
+    .apply_lft div {background-size: contain; background-position: center; background-repeat: no-repeat;}
+    .apply_lft00 {width: 90%; height: 26vh; margin: 0 auto;  margin-bottom: 2%; background-image: url(../images/apply_lft00.png);}
+    .apply_lft01 {width: 90%; height: 50vh; margin: 0 auto;  background-image: url(../images/apply_lft01.png);}
+
+    .apply_rgt {width: 50vw;}
+    .apply_rgt div {background-size: contain; background-position: center; background-repeat: no-repeat;}
+    .apply_rgt00 {width: 90%; height: 50vh; margin: 0 auto;  margin-bottom: 2%;background-image: url(../images/apply_rgt00.png);}
+    .apply_rgt01 {width: 90%; height: 26vh; margin: 0 auto; background-image: url(../images/apply_rgt01.png);}
+    #m_apply a {display: block; text-indent: -9999px;width: 100%;}
+
+    /*-----------------------#middle_txt-----------------------*/
+    #middle_txt {width: 100vw; margin: 2.5% auto;}
+    .mydog_samsung_img {display: block;text-indent: -9999px;width: 100vw;height: 30vh; background-position: right bottom;
+        background-repeat: no-repeat;background-attachment:local;background-size: cover;background-image: url(../images/m_samsung_txt01.png);}
+
+    /*-----------------------#dogshow-----------------------*/
+
+    #dogshow {display: flex;flex-flow: row nowrap;justify-content: space-around;width: 100%; margin-bottom: 2%;}
+    .dogshow_bg {display: block;width: 40vw;height: 40vh;background-position: center; background-size: contain;
+        background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
+    .dogshow_wrap {width: 47vw;}
+    .dogshow_txt {width: 100%;}
+    .dogshow_txt>span {display: block;}
+    .dogshow_txt>span:first-child {width: 100%;padding-top: 8%;font-size: 3rem;font-weight: bold;
+        font-family: 'Roboto', sans-serif; text-shadow: none;}
+    .dogshow_txt>span:last-child {display: inline-block; width: 60%; line-height: 1.2; font-size: 1.2rem;padding-top: 90px;}
+    .df_btn {width: 20%; padding-top: 12%;}
+    .df_btn>a {display: block;width: 100%;height: 34px;line-height: 34px;text-align: center;border: 2px solid #000;}
+
+    /*-----------------------#flower-----------------------*/
+
+    #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%;height: auto;padding: 0; margin-bottom: 7%;}
+    .flower_bg {display: none;}
+    .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center;
+        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.jpg);}
+    .remember_wrap {float: none;display: block; width: 47vw;}
+    .remember_txt {width: 100%; padding-top: 0;}
+    .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 3rem;padding-top: 8%;}
+    .remember_txt>.remember_normal {display: block;width: 62%; line-height: 1.2;font-size: 1.2rem;padding-top: 90px;}
+    .remember_btn {width: 20%; padding-top: 12%;}
+
+    /*-----------------------#main_address-----------------------*/
+    #main_address {position: relative;width: 100%; margin-bottom: 2.5%;}
+    .main_gradation {display: none;}
+    .gradation_dog {display: none;}
+
+    .main_add_wrap {position:unset; overflow: hidden; display: flex; justify-content: space-around; width: 100vw;}
+    .infor_add_box {float: none;width: 20vw;height: 20vw;margin-right: 0;padding: 25px; margin: 0 auto; }
+    .infor_add_box:nth-child(1) {background-color: #666;}
+    .infor_add_box:nth-child(2) {background-color: #a65a5a;}
+    .infor_add_box:nth-child(3) {background-color: #6eb5c7;}
+    .address_txt {display: block;font-weight: bold;font-size: 3.5vw;margin: 3vw 0;}
+
+    .infor_add_box>.phone {font-size: 3vw;margin-bottom: 5vw;}
+    .address_sub_txt {display: block;font-size: 0.5rem;margin-bottom: 17px;line-height: 1.2;}
+    .address_btn>a {display: inline-block; font-size: 0.8rem; border-bottom: 3px solid #000;}   
 }
+/* -----------------------------세부조정 모바일(533px~615px)----------------------------- */
+@media screen and (max-width: 615px) {
+    #main_notice {display: none;}
+
+    /* 기업형 숨김, 모바일 #m_mydog_infor 정보란 생성 */
+    #mydog_infor {display: none;}
+    #m_mydog_infor {display: flex; flex-flow: row wrap; width: 80%; margin: 2.5% auto;}
+    #m_mydog_infor div {width: 100%; background-repeat: no-repeat; background-position: center; background-size: contain; }
+    .mydog {background-image: url(../images/m_mydog&sansung.png); margin-right: 0;}
+    .blind {background-image: url(../images/m_blind.png);}
+    .more_btn {display: block; width: 30%; border: 2px solid #fff; margin-top: 60%;}
+    .more_btn a {display: block; width: 100%; line-height: 40px; color: #fff; font-weight: bold; text-align: center;}
+    
+    /*-----------------------.m_apply -----------------------*/
+    #m_apply {display: flex; justify-content: space-around; margin: 0 auto; height: auto;}
+    .apply_lft {width: 80vw;}
+    .apply_lft div {background-size: contain; background-position: center; background-repeat: no-repeat;}
+    .apply_lft00 {width: 70%; height: 17vh; margin: 0 auto;  margin-bottom: 2%; background-image: url(../images/apply_lft00.png);}
+    .apply_lft01 {width: 70%; height: 35vh; margin: 0 auto;  background-image: url(../images/apply_lft01.png);}
+
+    .apply_rgt {width: 80vw;}
+    .apply_rgt div {background-size: contain; background-position: center; background-repeat: no-repeat;}
+    .apply_rgt00 {width: 70%; height: 35vh; margin: 0 auto;  margin-bottom: 2%;background-image: url(../images/apply_rgt00.png);}
+    .apply_rgt01 {width: 70%; height: 17vh; margin: 0 auto; background-image: url(../images/apply_rgt01.png);}
+    #m_apply a {display: block; text-indent: -9999px;width: 100%;}
+
+    /*-----------------------#dogshow-----------------------*/
+
+    #dogshow {display: flex;flex-flow: row nowrap;justify-content: space-around;width: 100%; margin-bottom: 0;}
+    .dogshow_bg {display: block;width: 40vw;height: 40vh;background-position: center; background-size: contain;
+        background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
+    .dogshow_wrap {width: 54vw;}
+    .dogshow_txt {width: 100%;}
+    .dogshow_txt>span {display: block;}
+    .dogshow_txt>span:first-child {width: 100%;padding-top: 3%;font-size: 2.8rem;font-weight: bold;
+        font-family: 'Roboto', sans-serif; text-shadow: none;}
+    .dogshow_txt>span:last-child {display: inline-block; width: 59%; line-height: 1.2; font-size: 1rem;padding-top: 60px;}
+    .df_btn {width: 20%; padding-top: 10%;}
+    .df_btn>a {display: block;width: 100%;height: 34px; font-size: 0.8rem; line-height: 34px;text-align: center;border: 1px solid #000;}
+
+    /*-----------------------#flower-----------------------*/
+
+    #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%;height: auto; padding: 0; margin-bottom: 2.5%;}
+    .flower_bg {display: none;}
+    .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center;
+        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.jpg);}
+    .remember_wrap {float: none;display: block; width: 50vw;}
+    .remember_txt {width: 100%; padding-top: 0;}
+    .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 2.8rem;padding-top: 3%;}
+    .remember_txt>.remember_normal {display: block;width: 62%; line-height: 1.2;font-size: 1rem;padding-top: 60px;}
+    .remember_btn {width: 20%; padding-top: 20%;}
+
+    /*-----------------------#main_address-----------------------*/
+    #main_address {position: relative;width: 100%; margin-bottom: 2.5%;}
+    .main_gradation {display: none;}
+    .gradation_dog {display: none;}
+
+    .main_add_wrap {position:unset; overflow: hidden; display: flex; justify-content: space-between;}
+    .infor_add_box {float: none;width: 25vw;margin-right: 0;padding: 2%; margin: 0 auto; }
+    .address_txt {display: block;font-weight: bold;font-size: 3.5vw;margin: 2vw 0;}
+
+    .infor_add_box>.phone {font-size: 3vw;margin-bottom: 2.5vw;}
+    .address_sub_txt {display: block;font-size: 0.7rem;margin-bottom: 10px;line-height: 1.5;}
+    .address_btn>a {display: inline-block;font-size: 0.7rem;  border-bottom: 1px solid #000;}
+}
+
+/* -----------------------------세부조정 모바일(415px~532px)----------------------------- */
+@media screen and (max-width: 532px) {
+    #main_notice {display: none;}
+
+    /* 기업형 숨김, 모바일 #m_mydog_infor 정보란 생성 */
+    #mydog_infor {display: none;}
+    #m_mydog_infor {display: flex; flex-flow: row wrap; width: 80%; margin: 0 auto;}
+    #m_mydog_infor div {width: 100%; background-repeat: no-repeat; background-position: center; background-size: contain; }
+    .mydog {background-image: url(../images/m_mydog&sansung.png); margin-right: 0;}
+    .blind {background-image: url(../images/m_blind.png);}
+    .more_btn {display: block; width: 30%; border: 2px solid #fff; margin-top: 60%;}
+    .more_btn a {display: block; width: 100%; line-height: 40px; color: #fff; font-weight: bold; text-align: center;}
+    
+    /*-----------------------.m_apply -----------------------*/
+    #m_apply {display: flex; justify-content: space-around; margin: 2% auto; height: auto;}
+    .apply_lft {width: 50vw;}
+    .apply_lft div {background-size: contain; background-position: center; background-repeat: no-repeat;}
+    .apply_lft00 {width: 90%; height: 20vh; margin: 0 auto;  margin-bottom: 0; background-image: url(../images/apply_lft00.png);}
+    .apply_lft01 {width: 90%; height: 43vh; margin: 0 auto;  background-image: url(../images/apply_lft01.png);}
+
+    .apply_rgt {width: 50vw;}
+    .apply_rgt div {background-size: contain; background-position: center; background-repeat: no-repeat;}
+    .apply_rgt00 {width: 90%; height: 43vh; margin: 0 auto;  margin-bottom: 0;background-image: url(../images/apply_rgt00.png);}
+    .apply_rgt01 {width: 90%; height: 20vh; margin: 0 auto; background-image: url(../images/apply_rgt01.png);}
+    #m_apply a {display: block; text-indent: -9999px;width: 100%;}
+
+    /*-----------------------#middle_txt-----------------------*/
+    #middle_txt {width: 100vw; margin: 0 auto; padding: 25px 0;}
+    .mydog_samsung_img {display: block;text-indent: -9999px;width: 100vw;height: 30vh; background-position: right bottom;
+    background-repeat: no-repeat;background-attachment:local;background-size: cover;background-image: url(../images/m_samsung_txt01.png);}
+
+    /*-----------------------#dogshow-----------------------*/
+
+    #dogshow {display: flex;flex-flow: row nowrap;justify-content: space-around;width: 100%; height: 59vw; margin-bottom: 0;}
+    .dogshow_bg {display: block;width: 40vw;height: 40vh;background-position: center; background-size: contain;
+        background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
+    .dogshow_wrap {width: 54vw; height: auto;}
+    .dogshow_txt {width: 100%; height: auto;}
+    .dogshow_txt>span {display: block;}
+    .dogshow_txt>span:first-child {width: 100%;padding-top: 31%;font-size: 2rem;font-weight: bold;
+        font-family: 'Roboto', sans-serif; text-shadow: none;}
+    .dogshow_txt>span:last-child {display: inline-block; width: 67%; line-height: 1.2; font-size: 0.8rem;padding-top: 30px;}
+    .df_btn {width: 30%; padding-top: 13%;}
+    .df_btn>a {display: block;width: 100%;height: 34px; font-size: 0.8rem; line-height: 34px;text-align: center;border: 1px solid #000;}
+
+    /*-----------------------#flower-----------------------*/
+
+    #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%;height: 61vw; padding: 0; margin-bottom: 5%;}
+    .flower_bg {display: none;}
+    .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center;
+        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.jpg);}
+    .remember_wrap {float: none;display: block; width: 50vw;}
+    .remember_txt {width: 100%; padding-top: 0;}
+    .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 2rem;padding-top: 31%;}
+    .remember_txt>.remember_normal {display: block;width: 66.52%; line-height: 1.2;font-size: 0.8rem;padding-top: 30px;}
+    .remember_btn {width: 30%; padding-top: 13%;}
+
+
+    /*-----------------------#main_address-----------------------*/
+    #main_address {position: relative;width: 100%; margin-bottom: 2.5%;}
+    .main_gradation {display: none;}
+    .gradation_dog {display: none;}
+
+    .main_add_wrap {position:unset; overflow: hidden; display: flex; justify-content: space-between;}
+    .infor_add_box {float: none;width: 28vw;height: 25vw; margin-right: 0;padding: 1.5%; margin: 0 auto; }
+    .address_txt {display: block;font-weight: bold;font-size: 3vw;margin: 2vw 0;}
+
+    .infor_add_box>.phone {font-size: 3vw;margin-bottom: 2.5vw;}
+    .main_add_wrap div:nth-child(n+2):nth-child(-n+3) .addre_txt {margin-bottom: 9vw;}
+    .main_add_wrap div:nth-child(n+2):nth-child(-n+3) .address_sub_txt {display: none;}
+    
+    .address_btn>a {display: inline-block;font-size: 0.7rem;  border-bottom: 1px solid #000;}   
+    span.move {padding-top:22%;}
+}
+
 /* -----------------------------모바일(~414px)----------------------------- */
 @media screen and (max-width: 414px) {
 
-   
-    #main_notice {display: none;}
+    .mobile_slider {overflow: hidden; position: relative;display: block; width: 100vw;}
+    .m_slmobile_sliderider>ul.rslides {width: 100vw;}
+    .mobile_slider>ul.rslides li {width: 100vw;}
+    .mobile_slider>ul.rslides img {display: block; width: 100vw; background-size: cover;}
+
+    /*-----------------------.m_apply -----------------------*/
+    #mydog_apply {display: none;}
+    #m_apply {display: flex; justify-content: space-around; margin: 2% auto; height: auto;}
+    .apply_lft {width: 50vw;}
+    .apply_lft div {background-size: contain; background-position: center; background-repeat: no-repeat;}
+    .apply_lft00 {width: 90%; height: 23vh; margin: 0 auto;  margin-bottom: 0; background-image: url(../images/apply_lft00.png);}
+    .apply_lft01 {width: 90%; height: 31vh; margin: 0 auto;  background-image: url(../images/apply_lft01.png);}
+
+    .apply_rgt {width: 50vw;}
+    .apply_rgt div {background-size: contain; background-position: center; background-repeat: no-repeat;}
+    .apply_rgt00 {width: 90%; height: 31vh; margin: 0 auto;  margin-bottom: 0;background-image: url(../images/apply_rgt00.png);}
+    .apply_rgt01 {width: 90%; height: 23vh; margin: 0 auto; background-image: url(../images/apply_rgt01.png);}
+    #m_apply a {display: block; text-indent: -9999px;width: 100%;}
+
+    /*-----------------------#middle_txt-----------------------*/
+    #middle_txt {display: none;}
+
+    /*-----------------------#dogshow-----------------------*/
+
+    #dogshow {display: flex;flex-flow: row nowrap;justify-content: space-around;width: 100%;margin-bottom: 0;}
+    .dogshow_bg {display: block;width: 40vw;height: 40vh;background-position: center; background-size: contain;
+        background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
+    .dogshow_wrap {width: 50vw; height: auto;}
+    .dogshow_txt {width: 100%; height: auto;}
+    .dogshow_txt>span {display: block;}
+    .dogshow_txt>span:first-child {width: 100%;padding-top: 38%;font-size: 2rem;font-weight: bold;
+        font-family: 'Roboto', sans-serif; text-shadow: none;}
+    .dogshow_txt>span:last-child {display: inline-block; width: 77%; line-height: 1.2; font-size: 0.8rem;padding-top: 30px;}
+    .df_btn {width: 30%; padding-top: 13%;}
+    .df_btn>a {display: block;width: 100%;height: 30px; font-size: 0.8rem; line-height: 30px;text-align: center;border: 1px solid #000;}
+
+    /*-----------------------#flower-----------------------*/
+
+    #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%; height: 71vw; padding: 0; margin-bottom: 5%;}
+    .flower_bg {display: none;}
+    .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center;
+        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.jpg);}
+    .remember_wrap {float: none;display: block; width: 50vw;}
+    .remember_txt {width: 100%; padding-top: 0;}
+    .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 2rem;padding-top: 38%;}
+    .remember_txt>.remember_normal {display: block;width: 77%; line-height: 1.2;font-size: 0.8rem;padding-top: 30px;}
+    .remember_btn {width: 30%; padding-top: 13%;}
+
+
+    /*-----------------------#main_address-----------------------*/
+    .main_gradation {display: none;}
+    .gradation_dog {display: none;}
+
+    .main_add_wrap {display: none;}
+    .mobile_add {display: flex; flex-flow: column nowrap; margin: 5% 0;}
+    .mobile_add div {display: block; height: 125px; padding-left: 5%; margin-bottom: 5%; background-repeat: no-repeat; background-position: center; background-size: contain;}
+    .center {background-image: url(../images/m_phone.png);} 
+    .add {background-image: url(../images/m_address.png);} 
+    .share {background-image: url(../images/m_notice.png);} 
+    .center .m_phone {font-size: 1.8rem; font-weight: 900;}
+    .mo_add_main {display: block;font-weight: bold;font-size: 1.5rem;margin: 18px 0; color: #fff;}  
+    .mo_add_mid {width: 100%; font-size: 0.9rem;margin-bottom: 10px;line-height: 1.5; color: #fff;}
+    .plus_btn {float: right; padding-right: 5%;}
+    .plus_btn a {display: inline-block; width: 100%; border-bottom: 1px solid #fff; color: #fff;}
 }
