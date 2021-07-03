@@ -403,7 +403,7 @@
 	#logo {width: 42%;margin: 0 auto;}
 	#logo>a {display: block;width: 100%;}
 
-	.m_nav_icon {float: left;display: block; width: 6.5%; padding: 1.2%; margin-top: 2.5%;}
+	.m_nav_icon {float: left;display: block; width: 6.5%; padding: 3.2%; margin-top: 2.5%;}
 	.m_nav_icon>a {display: block;}
 	.m_nav_icon>a>i {display: block; font-weight: bold; font-size: 2rem;}
 
@@ -438,7 +438,7 @@
 	.footer_top ul li a {display: block; width: 100%; text-align: center; font-size: 0.75rem;}
 	
 	.footer_infor {}
-	.footer_infor address {width: 100%; text-align: center; font-size: 0.8rem;}
+	.footer_infor address {width: 100%; text-align: center; font-size: 0.7rem;}
 	.copyright {width: 100%; text-align: center; font-size: 0.75rem;}
 	/* 패밀리사이트 숨김 */
 	.footer_inner {display: none;}
