@@ -19,18 +19,20 @@
     <link rel="stylesheet" href="maincss/main.css">
     <link rel="stylesheet" href="maincss/aos.css">
     <link rel="stylesheet" href="common/css/rsslider.css">
-    <!-- rsslider 연결 -->
+    <!-- ↑↑↑ rsslider 연결 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="common/js/jquery-3.6.0.min.js"></script>
     <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="common/js/prefixfree.min.js"></script>
+    <!-- ↑↑↑ prefixfree 접두사 제거 -->
     <script src="common/js/common.js"></script>
     <script src="mainjs/main.js"></script>
     <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
     <!-- <script src="mainjs/jquery-syaku.rolling.js"></script> -->
     <!-- notice 롤링 -->
-    <script src="mainjs/aos.js"></script>
+    <script src="common/js/aos.js"></script>
     <!-- ↑↑↑ aos -->
     <script src="common/js/easing.js"></script>
     <!-- ↑↑↑↑ top btn 속도 제어 JS -->
@@ -426,7 +428,7 @@
     </div>
 
     <!-- 팝업(모달)창 -->
-    <div id="showimage" style="position: absolute;top: 200px; left: 100px; width: 322px; height: 322px; z-index: 150;">
+    <div id="showimage" style="position: absolute;top: 200px; left: 100px; width: 322px; height: 322px; z-index: 500;">
         <div class="pop_img"><img src="popup/popup_noQR.png" alt="상업적 목적이 아닌 개인포트폴리오용도로 제작되었다는 의미가 담긴 이미지 그 출처가 따로 있음을 밝힘"></div>
         <form action="" style="font-size: 12px; text-align: center; background-color: rgb(131, 131, 131);">
             <input type="checkbox" id="Notice" name="Notice" titel="오늘은 이 창을 열지 않음 선택 상자">
@@ -449,7 +451,6 @@
     <!-- 페이지롤링효과 -->
     <script type="text/javascript">
         jQuery(function() {
-  
             jQuery("#srolling").srolling({
                 data : $(".headnews"),  // 노출될 아이템
                 auto : true,                    //자동 롤링 true , false

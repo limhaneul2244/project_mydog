@@ -137,7 +137,7 @@
 .infor_add_box {float: left;width: 300px;height: 320px;margin-right: 20px;padding: 40px;}
 .address_txt {display: block;font-weight: bold;font-size: 2.5rem;margin: 50px 0;}
 
-.infor_add_box>.phone {font-size: 2.5rem;margin-bottom: 45px;}
+.infor_add_box>.phone {font-size: 2.5rem;margin-bottom: 42px;}
 .address_sub_txt {display: block;font-size: 1rem;margin-bottom: 60px;line-height: 2;}
 
 .address_btn {display: block;}
@@ -484,7 +484,7 @@
     .infor_add_box:nth-child(3) {background-color: #6eb5c7;}
     .address_txt {display: block;font-weight: bold;font-size: 3.5vw;margin: 3vw 0;}
 
-    .infor_add_box>.phone {font-size: 3vw;margin-bottom: 5vw;}
+    .infor_add_box>.phone {font-size: 3vw;margin-bottom: 2vw;}
     .address_sub_txt {display: block;font-size: 0.5rem;margin-bottom: 17px;line-height: 1.2;}
     .address_btn>a {display: inline-block; font-size: 0.8rem; border-bottom: 3px solid #000;}   
 }
@@ -603,7 +603,7 @@
 
     /*-----------------------#flower-----------------------*/
 
-    #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%;height: 61vw; padding: 0; margin-bottom: 5%;}
+    #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%;height: 70vw; padding: 0; margin-bottom: 5%;}
     .flower_bg {display: none;}
     .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center;
         background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.jpg);}
