@@ -18,7 +18,7 @@
 
 /*-----------------------#mydog_infor_top-----------------------*/
 
-#mydog_infor {width: 1000px;height: 700px;margin: 0px auto;margin-top: 60px;background-color: #faf5e8;}
+#mydog_infor {width: 1280px;height: 700px;margin: 0px auto;margin-top: 60px;background-color: #faf5e8;}
 #mydog_infor>.mydog_infor_top {width: 100%;height: 400px;margin: 0 auto;}
 /*-----------------------#m_mydog_infor-----------------------*/
 #m_mydog_infor {display: none;}
@@ -139,15 +139,14 @@
 
 .infor_add_box>.phone {font-size: 2.5rem;margin-bottom: 42px;}
 .address_sub_txt {display: block;font-size: 1rem;margin-bottom: 60px;line-height: 2;}
-
-.address_btn {display: block;}
-.address_btn>a {display: inline-block;border-bottom: 3px solid #000;}
+.address_btn {float:right;}
+.address_btn>a {display: inline-block; width: 100%; padding-bottom: 3%;border-bottom: 3px solid #333;}
 
 /* @media screen */
 /* -----------------------------일반PC (1281~1600 / 1280px정렬)----------------------------- */
 
 @media screen and (min-width: 1281px) and (max-width: 1600px) {
-
+    #mydog_infor {width: 1280px;}
     #section {width: 100%; margin: 0 auto;}
     #main_notice {width: 100%;}
     #notice_box {width: 100%; margin: 0 auto; background-color: gray;}
@@ -231,7 +230,7 @@
 
     .infor_add_box>.phone {font-size: 1.5rem;margin-bottom: 73px;}
     .address_sub_txt {display: block;font-size: 1rem;margin-bottom: 60px;line-height: 2;}
-    .address_btn>a {border-bottom: 3px solid #000;}   
+    .address_btn>a {padding-bottom: 3%;border-bottom: 3px solid #333;}   
 
     /* .m_apply */
     #m_apply {display: none;}
@@ -240,49 +239,9 @@
 /* -----------------------------대형태블릿(769~1280)----------------------------- */
 @media screen and (min-width: 769px) and (max-width: 1280px) {
     /* 대형~중형까지 메인슬라이드 */
-    .m_slider {position: relative;display: block; width: 100vw;}
-    .m_slider>ul.rslides {width: 100vw;}
-    .m_slider>ul.rslides li {width: 100vw;}
-    .m_slider>ul.rslides img {display: block; width: 100vw; background-size: contain;}
+    .m_slider {display: block; width: 100vw;}
     #main_notice {display: none;}
     #mydog_apply {display: none;}
-    
-    #m_visual_slider span {position: absolute;display: block;}
-    .visual_txt00 {
-        top: 455px;
-        left: 485px;
-        width: 950px;
-        height: 150px;
-        font-weight: bold;
-        text-align: center;
-        line-height: 150px;
-        font-size: 2rem;
-        background-color: rgb(247, 247, 247, 0.5);
-    }
-    .visual_txt01 {
-        top: 200px;
-        left: 485px;
-        width: 950px;
-        height: 150px;
-        color: #fff;
-        font-weight: bold;
-        text-align: center;
-        line-height: 150px;
-        font-size: 2rem;
-        background-color: rgb(247, 247, 247, 0.5);
-    }
-    .visual_txt02 {
-        top: 320px;
-        left: 100px;
-        width: 600px;
-        height: 230px;
-        line-height: 3.5;
-        color: #3a3a3a;
-        font-weight: bold;
-        text-align: left;
-        font-size: 2rem;
-        background-color: rgb(247, 247, 247, 0.5);
-    }
 
     /* 기업형 숨김, 모바일 #m_mydog_infor 정보란 생성 */
     #mydog_infor {display: none;}
@@ -296,16 +255,16 @@
     /*-----------------------.m_apply -----------------------*/
     /* #m_apply {display: flex; justify-content: space-around; width: 90%; margin: 2% auto; margin: 0 auto;} */
     #m_apply {overflow: hidden; display: block; width: 100%; margin: 2% auto; margin: 0 auto;}
-    .apply_lft {float: left; width: 40%;padding-left: 7%;}
+    .apply_lft {float: left; width: 40%;padding-left: 8%;}
     .apply_lft div {float: right; background-size: contain; background-position: center; background-repeat: no-repeat;}
     .apply_lft div a {display: block; width: 100%; text-indent: -9999px;}
-    .apply_lft00 {width: 36vw; height: 25vw;margin-bottom: 2.5%; background-image: url(../images/apply_lft00.png);}
+    .apply_lft00 {width: 36vw; height: 25vw;margin-bottom: 6.5%; background-image: url(../images/apply_lft00.png);}
     .apply_lft01 {width: 36vw; height: 50vw;background-image: url(../images/apply_lft01.png);}
 
-    .apply_rgt {float: right; width: 40%;padding-right: 7%;}
+    .apply_rgt {float: right; width: 40%;padding-right: 8%;}
     .apply_rgt div {float: left; background-size: contain; background-position: center; background-repeat: no-repeat;}
     .apply_rgt div a {display: block; text-indent: -9999px;width: 100%;}
-    .apply_rgt00 {width: 36vw; height: 50vw; margin-bottom: 2.5%;background-image: url(../images/apply_rgt00.png);}
+    .apply_rgt00 {width: 36vw; height: 50vw; margin-bottom: 6.5%;background-image: url(../images/apply_rgt00.png);}
     .apply_rgt01 {width: 36vw; height: 25vw; background-image: url(../images/apply_rgt01.png);}
 
     /*-----------------------#middle_txt-----------------------*/
@@ -332,7 +291,7 @@
     #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%;padding: 0; margin-bottom: 7%;}
     .flower_bg {display: none;}
     .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 529px;background-position: center;
-        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.jpg);}
+        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.png);}
     .remember_wrap {float: none;display: block; width: 47%;}
     .remember_txt {width: 100%; padding-top: 0;}
     .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 3rem;padding-top: 23%;}
@@ -351,10 +310,8 @@
     .infor_add_box:nth-child(3) {background-color: #6eb5c7;}
     .address_txt {display: block;font-weight: bold;font-size: 2rem;margin: 18px 0;}
 
-    .infor_add_box>.phone {font-size: 1.5rem;margin-bottom: 73px;}
+    .infor_add_box>.phone {font-size: 1.5rem;margin-bottom: 44px;}
     .address_sub_txt {display: block;font-size: 1rem;margin-bottom: 26px;line-height: 2;}
-    .address_btn>a {border-bottom: 3px solid #000;}   
-
 }
 
 
@@ -363,49 +320,9 @@
 /* -----------------------------중형태블릿(415~768)----------------------------- */
 @media screen and (min-width: 415px) and (max-width: 768px) {
     /* 대형~중형까지 메인슬라이드 */
-    .m_slider {position: relative;display: block; width: 100vw;}
-    .m_slider>ul.rslides {width: 100vw;}
-    .m_slider>ul.rslides li {width: 100vw;}
-    .m_slider>ul.rslides img {display: block; width: 100vw; background-size: contain;}
+    .m_slider {display: block; width: 100vw;}
     #main_notice {display: none;}
     #mydog_apply {display: none;}
-    
-    #m_visual_slider span {position: absolute;display: block;}
-    .visual_txt00 {
-        top: 455px;
-        left: 485px;
-        width: 950px;
-        height: 150px;
-        font-weight: bold;
-        text-align: center;
-        line-height: 150px;
-        font-size: 2rem;
-        background-color: rgb(247, 247, 247, 0.5);
-    }
-    .visual_txt01 {
-        top: 200px;
-        left: 485px;
-        width: 950px;
-        height: 150px;
-        color: #fff;
-        font-weight: bold;
-        text-align: center;
-        line-height: 150px;
-        font-size: 2rem;
-        background-color: rgb(247, 247, 247, 0.5);
-    }
-    .visual_txt02 {
-        top: 320px;
-        left: 100px;
-        width: 600px;
-        height: 230px;
-        line-height: 3.5;
-        color: #3a3a3a;
-        font-weight: bold;
-        text-align: left;
-        font-size: 2rem;
-        background-color: rgb(247, 247, 247, 0.5);
-    }
 
     /* 기업형 숨김, 모바일 #m_mydog_infor 정보란 생성 */
     #mydog_infor {display: none;}
@@ -417,28 +334,17 @@
     .more_btn a {display: block; width: 100%; line-height: 40px; color: #fff; font-weight: bold; text-align: center;}
     
     /*-----------------------.m_apply -----------------------*/
-    /* #m_apply {display: flex; justify-content: space-around; margin: 2% auto; height: auto;}
-    .apply_lft {width: 50vw;}
-    .apply_lft div {background-size: contain; background-position: center; background-repeat: no-repeat;}
-    .apply_lft00 {width: 90%; height: 26vh; margin: 0 auto;  margin-bottom: 2%; background-image: url(../images/apply_lft00.png);}
-    .apply_lft01 {width: 90%; height: 50vh; margin: 0 auto;  background-image: url(../images/apply_lft01.png);}
-
-    .apply_rgt {width: 50vw;}
-    .apply_rgt div {background-size: contain; background-position: center; background-repeat: no-repeat;}
-    .apply_rgt00 {width: 90%; height: 50vh; margin: 0 auto;  margin-bottom: 2%;background-image: url(../images/apply_rgt00.png);}
-    .apply_rgt01 {width: 90%; height: 26vh; margin: 0 auto; background-image: url(../images/apply_rgt01.png);}
-    #m_apply a {display: block; text-indent: -9999px;width: 100%;} */
     #m_apply {overflow: hidden; display: block; width: 100%; margin: 2% auto; margin: 0 auto;}
-    .apply_lft {float: left; width: 40%;padding-left: 6%;}
+    .apply_lft {float: left; width: 40%;padding-left: 8%;}
     .apply_lft div {float: right; background-size: contain; background-position: center; background-repeat: no-repeat;}
     .apply_lft div a {display: block; width: 100%; text-indent: -9999px;}
-    .apply_lft00 {width: 36vw; height: 25vw;margin-bottom: 9%; background-image: url(../images/apply_lft00.png);}
+    .apply_lft00 {width: 36vw; height: 25vw;margin-bottom: 8.5%; background-image: url(../images/apply_lft00.png);}
     .apply_lft01 {width: 36vw; height: 50vw;background-image: url(../images/apply_lft01.png);}
 
-    .apply_rgt {float: right; width: 40%;padding-right: 6%;}
+    .apply_rgt {float: right; width: 40%;padding-right: 8%;}
     .apply_rgt div {float: left; background-size: contain; background-position: center; background-repeat: no-repeat;}
     .apply_rgt div a {display: block; text-indent: -9999px;width: 100%;}
-    .apply_rgt00 {width: 36vw; height: 50vw; margin-bottom: 9%;background-image: url(../images/apply_rgt00.png);}
+    .apply_rgt00 {width: 36vw; height: 50vw; margin-bottom: 8.5%;background-image: url(../images/apply_rgt00.png);}
     .apply_rgt01 {width: 36vw; height: 25vw; background-image: url(../images/apply_rgt01.png);}
 
     /*-----------------------#middle_txt-----------------------*/
@@ -465,7 +371,7 @@
     #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%;height: auto;padding: 0; margin-bottom: 7%;}
     .flower_bg {display: none;}
     .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center;
-        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.jpg);}
+        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.png);}
     .remember_wrap {float: none;display: block; width: 47vw;}
     .remember_txt {width: 100%; padding-top: 0;}
     .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 3rem;padding-top: 8%;}
@@ -486,7 +392,7 @@
 
     .infor_add_box>.phone {font-size: 3vw;margin-bottom: 2vw;}
     .address_sub_txt {display: block;font-size: 0.5rem;margin-bottom: 17px;line-height: 1.2;}
-    .address_btn>a {display: inline-block; font-size: 0.8rem; border-bottom: 3px solid #000;}   
+    .address_btn>a {display: inline-block; font-size: 0.8rem;}   
 }
 /* -----------------------------세부조정 모바일(533px~615px)----------------------------- */
 @media screen and (max-width: 615px) {
@@ -503,13 +409,13 @@
     
     /*-----------------------.m_apply -----------------------*/
     #m_apply {overflow: hidden; display: block; width: 100%; margin: 2% auto; margin: 0 auto;}
-    .apply_lft {float: left; width: 40%;padding-left: 6%;}
+    .apply_lft {float: left; width: 40%;padding-left: 8.5%;}
     .apply_lft div {float: right; background-size: contain; background-position: center; background-repeat: no-repeat;}
     .apply_lft div a {display: block; width: 100%; text-indent: -9999px;}
     .apply_lft00 {width: 36vw; height: 25vw;margin-bottom: 9%; background-image: url(../images/apply_lft00.png);}
     .apply_lft01 {width: 36vw; height: 50vw;background-image: url(../images/apply_lft01.png);}
 
-    .apply_rgt {float: right; width: 40%;padding-right: 6%;}
+    .apply_rgt {float: right; width: 40%;padding-right: 8.5%;}
     .apply_rgt div {float: left; background-size: contain; background-position: center; background-repeat: no-repeat;}
     .apply_rgt div a {display: block; text-indent: -9999px;width: 100%;}
     .apply_rgt00 {width: 36vw; height: 50vw; margin-bottom: 9%;background-image: url(../images/apply_rgt00.png);}
@@ -534,7 +440,7 @@
     #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%;height: auto; padding: 0; margin-bottom: 2.5%;}
     .flower_bg {display: none;}
     .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center;
-        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.jpg);}
+        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.png);}
     .remember_wrap {float: none;display: block; width: 50vw;}
     .remember_txt {width: 100%; padding-top: 0;}
     .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 2.8rem;padding-top: 3%;}
@@ -552,7 +458,7 @@
 
     .infor_add_box>.phone {font-size: 3vw;margin-bottom: 2.5vw;}
     .address_sub_txt {display: block;font-size: 0.7rem;margin-bottom: 10px;line-height: 1.5;}
-    .address_btn>a {display: inline-block;font-size: 0.7rem;  border-bottom: 1px solid #000;}
+    .address_btn>a {display: inline-block;font-size: 0.7rem;  border-bottom: 1px solid #333;}
 }
 
 /* -----------------------------세부조정 모바일(415px~532px)----------------------------- */
@@ -570,13 +476,13 @@
     
     /*-----------------------.m_apply -----------------------*/
     #m_apply {overflow: hidden; display: block; width: 100%; margin: 2% auto; margin: 0 auto;}
-    .apply_lft {float: left; width: 40%;padding-left: 6%;}
+    .apply_lft {float: left; width: 40%;padding-left: 7%;}
     .apply_lft div {float: right; background-size: contain; background-position: center; background-repeat: no-repeat;}
     .apply_lft div a {display: block; width: 100%; text-indent: -9999px;}
     .apply_lft00 {width: 36vw; height: 25vw;margin-bottom: 9%; background-image: url(../images/apply_lft00.png);}
     .apply_lft01 {width: 36vw; height: 50vw;background-image: url(../images/apply_lft01.png);}
 
-    .apply_rgt {float: right; width: 40%;padding-right: 6%;}
+    .apply_rgt {float: right; width: 40%;padding-right: 7%;}
     .apply_rgt div {float: left; background-size: contain; background-position: center; background-repeat: no-repeat;}
     .apply_rgt div a {display: block; text-indent: -9999px;width: 100%;}
     .apply_rgt00 {width: 36vw; height: 50vw; margin-bottom: 9%;background-image: url(../images/apply_rgt00.png);}
@@ -606,7 +512,7 @@
     #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%;height: 70vw; padding: 0; margin-bottom: 5%;}
     .flower_bg {display: none;}
     .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center;
-        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.jpg);}
+        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.png);}
     .remember_wrap {float: none;display: block; width: 50vw;}
     .remember_txt {width: 100%; padding-top: 0;}
     .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 2rem;padding-top: 31%;}
@@ -623,12 +529,12 @@
     .infor_add_box {float: none;width: 28vw;height: 25vw; margin-right: 0;padding: 1.5%; margin: 0 auto; }
     .address_txt {display: block;font-weight: bold;font-size: 3vw;margin: 2vw 0;}
 
-    .infor_add_box>.phone {font-size: 3vw;margin-bottom: 2.5vw;}
+    .infor_add_box>.phone {font-size: 3vw;margin-bottom: 5.5vw;}
     .main_add_wrap div:nth-child(n+2):nth-child(-n+3) .addre_txt {margin-bottom: 9vw;}
     .main_add_wrap div:nth-child(n+2):nth-child(-n+3) .address_sub_txt {display: none;}
     
-    .address_btn>a {display: inline-block;font-size: 0.7rem;  border-bottom: 1px solid #000;}   
-    span.move {padding-top:22%;}
+    .address_btn>a {display: inline-block;font-size: 0.7rem;}   
+    span.move {padding-top:35%;}
 }
 
 /* -----------------------------모바일(~414px)----------------------------- */
@@ -688,7 +594,7 @@
     #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%; height: 71vw; padding: 0; margin-bottom: 5%;}
     .flower_bg {display: none;}
     .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center;
-        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.jpg);}
+        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.png);}
     .remember_wrap {float: none;display: block; width: 50vw;}
     .remember_txt {width: 100%; padding-top: 0;}
     .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 2rem;padding-top: 38%;}
