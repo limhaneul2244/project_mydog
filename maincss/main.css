@@ -12,8 +12,6 @@
 #main_notice {overflow: hidden;width: 1600px;height: 80px;margin: 0 auto;}
 #srolling {position: relative;overflow: hidden;width: 80%;height: 60px;line-height: 60px;margin: 10px auto;border: 3px solid rgb(185, 185, 185);}
 .notice_box {display: none;}
-.notice_box>.headnews {}
-.notice_box>.headnews>a {}
 #main_notice .notice_txt {display: block;width: 100%;font-size: 1.5rem;}
 
 /*-----------------------#mydog_infor_top-----------------------*/
@@ -35,14 +33,10 @@
 
 /* --------------------more_btn transition-------------------- */
 .more_btn {width: 900px;height: 36px;margin: 40px auto;}
-.more_btn>.more_btn_wrap {display: block;width: 106px;height: 36px;margin: 0 auto;
-    transition-property: width, height, background-color;transition-duration: 0.2s;transition-timing-function: linear;transition-delay: 0.1s;}
+.more_btn>.more_btn_wrap {display: block;width: 106px;height: 36px;margin: 0 auto; transition-property: width, height, background-color;transition-duration: 0.2s;transition-timing-function: linear;transition-delay: 0.1s;}
 .more_btn_wrap:hover {width: 106px;height: 36px;background-color: rgb(211, 130, 24, 0.5);}
 .more_btn>.more_btn_wrap>a {display: block;width: 106px;height: 36px;line-height: 36px;text-align: center;border: 2px solid #000;}
 .more_btn>.more_btn_wrap>a:hover {color: #fff;border: 2px solid #fff;}
-
-
-
 
 /* --------------------------------------------------------- */
 .small_txt_top {display: inline-block;font-size: 1rem;}
@@ -50,63 +44,49 @@
 
 /*-----------------------#mydog_apply-----------------------*/
 #mydog_apply {position: relative;width: 1920px;height: 3200px;margin: 60px auto;}
-#mydog_apply>.apply_left_girl {display: inline-block;text-indent: -9999px;width: 950px;
-    height: 650px;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/apply_left_girl.png);}
+#mydog_apply>.apply_left_girl {display: inline-block;text-indent: -9999px;width: 950px; height: 650px;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/apply_left_girl.png);}
 
 #mydog_apply>.apply_left_txt_01 {float: right;width: 830px;height: 530px;text-align: left;padding: 50px;}
 .apply_left_txt_01>.apply_txt_bold {display: block;font-weight: bold;font-size: 3rem;margin: 60px auto;}
 .apply_txt_normal {display: block;line-height: 70px;font-size: 1.5rem;}
 
-.apply_left_txt_01{}
 .apply_left_txt_01>.more_btn{position: relative;}
 .apply_left_txt_01>.more_btn>.more_btn_wrap{position: absolute;}
-.apply_left_txt_01>.more_btn>.more_btn_wrap>a{}
-
 
 /* 리트리버 img2 */
-.apply_right_dog {position: absolute;top: 550px;right: 35px;text-indent: -9999px;width: 848px;height: 1050px;background-position: 0 0;
-    background-repeat: no-repeat;background-image: url(../images/apply_right_dog.png);}
+.apply_right_dog {position: absolute;top: 550px;right: 35px;text-indent: -9999px;width: 848px;height: 1050px;background-position: 0 0; background-repeat: no-repeat;background-image: url(../images/apply_right_dog.png);}
 .apply_right_img_txt_01 {position: relative;display: inline-block;width: 830px;height: 700px;text-align: right;padding: 60px;}
 .apply_right_img_txt_bold {display: block;font-weight: bold;font-size: 3rem;margin: 70px auto;}
 .apply_right_img_txt_normal {display: block;line-height: 70px;font-size: 1.5rem;}
 
-.apply_right_img_txt_01>.rft_btn {}
 .rft_btn>.more_btn_wrap {display: inline-block;position: absolute;right: 10%;margin: 0 auto;}
 .rft_btn a {display: block;width: 100%;height: 30px;line-height: 30px;text-align: center;border: 2px solid #000;}
 
 /* 단체견학 신청 img3 */
 .visit_img {position: relative;top: 60px;}
 /* .apply_right_img_txt_01에 po:r 찍음 */
-.apply_left_visit {display: inline-block;text-indent: -9999px;width: 950px;
-    height: 650px;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/apply_left_park.png);}
+.apply_left_visit {display: inline-block;text-indent: -9999px;width: 950px; height: 650px;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/apply_left_park.png);}
 .visit_img>.apply_left_txt_01 {float: right;width: 830px;height: 530px;text-align: left;padding: 60px;}
-.visit_img>.more_btn {}
-
 
 /* 자원봉사 신청 img4 */
-.apply_right_walk {position: absolute;bottom: 0;right: 35px;display: inline-block;text-indent: -9999px;width: 840px;
-    height: 1030px;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/apply_right_walk.png);}
-.walk_img>.apply_right_img_txt_01 {position: absolute;left: 0;bottom: 0;display: inline-block;width: 830px;height: 700px;
-    text-align: right;padding: 60px;}
+.apply_right_walk {position: absolute;bottom: 0;right: 35px;display: inline-block;text-indent: -9999px;width: 840px; height: 1030px;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/apply_right_walk.png);}
+.walk_img>.apply_right_img_txt_01 {position: absolute;left: 0;bottom: 0;display: inline-block;width: 830px;height: 700px; text-align: right;padding: 60px;}
 
 /* .m_apply */
 #m_apply {display: none;}
 
 /*-----------------------#middle_txt-----------------------*/
 #middle_txt {display: block;width: 100%;padding: 50px 0;}
-.mydog_samsung_img {text-indent: -9999px;width: 100%;height: 400px;margin: 0 auto;background-position: center;background-repeat: no-repeat;
-    background-attachment: fixed;background-image: url(../images/main_madogSamsung_txt.png);}
+.mydog_samsung_img {text-indent: -9999px;width: 100%;height: 400px;margin: 0 auto;background-position: center;background-repeat: no-repeat; background-attachment: fixed;background-image: url(../images/main_madogSamsung_txt.png);}
 
 /*-----------------------#dogshow-----------------------*/
 
 #dogshow {display: flex;flex-flow: row nowrap;justify-content: space-between;width: 1920px; margin: 0 auto;}
-.dogshow_bg {position: relative;display: block;width: 50%;height: 550px;background-position: 0 0;
-    background-repeat: no-repeat;background-image: url(../images/fly_dog.png);}
+.dogshow_bg {position: relative;display: block;width: 50%;height: 550px;background-position: 0 0; background-repeat: no-repeat;background-image: url(../images/fly_dog.png);}
 .dogshow_wrap {width: 45%;height: 331px;}
 .dogshow_txt {width: 100%;height: 220px;}
 .dogshow_txt>span {display: block;}
-.dogshow_txt>span:first-child {width: 100%;padding-top: 10%;font-size: 6rem;font-weight: bold;
-    font-family: 'Open Sans', sans-serif;text-shadow: 50px 50px 0px #918e8e, 100px 100px 0px #b5b2b2;}
+.dogshow_txt>span:first-child {width: 100%;padding-top: 10%;font-size: 6rem;font-weight: bold; font-family: 'Open Sans', sans-serif;text-shadow: 50px 50px 0px #918e8e, 100px 100px 0px #b5b2b2;}
 .dogshow_txt>span:last-child {font-size: 1.5rem;padding-top: 150px;}
 .df_btn {width: 20%; padding-top: 25%;}
 .df_btn>a {display: block;width: 100%;height: 34px;line-height: 34px;text-align: center;border: 2px solid #000;}
@@ -115,8 +95,7 @@
 .remember_bg {display: none;}
 .remember_wrap {display: none;}
 #flower {width: 1920px; height: 499px; margin: 0 auto; padding: 50px 0;}
-.flower_bg {width: 100%;height: 499px;background-position: center;
-    background-size: contain;background-repeat: no-repeat;background-image: url(../images/flower_bg.png);}
+.flower_bg {width: 100%;height: 499px;background-position: center; background-size: contain;background-repeat: no-repeat;background-image: url(../images/flower_bg.png);}
 .flower_wrap {float: right;width: 900px;height: 499px;}
 .flower_wrap>.flower_txt {padding-top: 5%;}
 .flower_txt>.flower_bold {display: block;font-weight: bold;font-size: 4rem;padding: 50px 0;}
@@ -127,11 +106,9 @@
 .mobile_add {display: none;}
 #main_address {position: relative;width: 1920px;margin: 0 auto;}
 
-.main_gradation {position: relative;display: block;text-indent: -9999px;width: 1920px;height: 400px;
-    margin: 150px auto;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/main_gradation.png);}
+.main_gradation {position: relative;display: block;text-indent: -9999px;width: 1920px;height: 400px; margin: 150px auto;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/main_gradation.png);}
 
-.gradation_dog {position: absolute;bottom: 0;right: 0;display: inline-block;text-indent: -9999px;width: 350px;
-    height: 513px;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/gradation_dog.png);}
+.gradation_dog {position: absolute;bottom: 0;right: 0;display: inline-block;text-indent: -9999px;width: 350px; height: 513px;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/gradation_dog.png);}
 
 .main_add_wrap {position: absolute;top: 0;left: 360px;width: 1280px;margin: 0 auto;}
 .infor_add_box {float: left;width: 300px;height: 320px;margin-right: 20px;padding: 40px;}
@@ -144,8 +121,8 @@
 
 /* @media screen */
 /* -----------------------------일반PC (1281~1600 / 1280px정렬)----------------------------- */
-
 @media screen and (min-width: 1281px) and (max-width: 1600px) {
+    #main_visual {padding-top: 0;}
     #mydog_infor {width: 1280px;}
     #section {width: 100%; margin: 0 auto;}
     #main_notice {width: 100%;}
@@ -156,8 +133,7 @@
     #mydog_apply {position: relative;width: 100%; height: 2525px; margin: 60px auto;}
 
     /* 안내견 신청 img1 */
-    #mydog_apply>.apply_left_girl {display: inline-block;text-indent: -9999px;width: 50%;height: 445px;background-position: center center;
-    background-repeat: no-repeat;background-size: cover;background-image: url(../images/apply_left_girl.png);}
+    #mydog_apply>.apply_left_girl {display: inline-block;text-indent: -9999px;width: 50%;height: 445px;background-position: center center; background-repeat: no-repeat;background-size: cover;background-image: url(../images/apply_left_girl.png);}
 
     #mydog_apply>.apply_left_txt_01 {width: 40%;height: 400px; padding: 33px;}
     .apply_left_txt_01>.apply_txt_bold {font-weight: bold;font-size: 3rem;margin-top: 10px;}
@@ -165,11 +141,9 @@
 
     .apply_left_txt_01>.more_btn{position: relative;}
     .apply_left_txt_01>.more_btn>.more_btn_wrap{position: absolute;}
-    .apply_left_txt_01>.more_btn>.more_btn_wrap>a{}
 
     /* 반려견분양 img2 */
-    .apply_right_dog {position: absolute;top: 500px;right:0;text-indent: -9999px;width: 36%;height: 700px;background-position: 0 0;
-        background-repeat: no-repeat;background-size: contain;background-image: url(../images/apply_right_dog.png);}
+    .apply_right_dog {position: absolute;top: 500px;right:0;text-indent: -9999px;width: 36%;height: 700px;background-position: 0 0; background-repeat: no-repeat;background-size: contain;background-image: url(../images/apply_right_dog.png);}
     .apply_right_img_txt_01 {width: 40%;height: 600px;text-align: right;padding: 60px;}
     .apply_right_img_txt_bold {display: block;font-weight: bold;font-size: 3rem;margin: 70px auto;}
     .apply_right_img_txt_normal {display: block;line-height: 70px;font-size: 1.5rem;}
@@ -177,16 +151,12 @@
     /* 단체견학 신청 img3 */
     .visit_img {position: relative;top: 60px;}
     /* .apply_right_img_txt_01에 po:r 찍음 */
-    .apply_left_visit {display: inline-block;text-indent: -9999px;width: 50%;height: 445px;background-position: 0 0;background-repeat: no-repeat;background-size: cover;
-        background-image: url(../images/apply_left_park.png);}
+    .apply_left_visit {display: inline-block;text-indent: -9999px;width: 50%;height: 445px;background-position: 0 0;background-repeat: no-repeat;background-size: cover; background-image: url(../images/apply_left_park.png);}
     .visit_img>.apply_left_txt_01 {float: right;width: 40%;height: 400px;text-align: left;padding: 33px;}
 
     /* 자원봉사 신청 img4 */
-    .apply_right_walk {position: absolute;bottom: 130px;right: 0;display: inline-block;text-indent: -9999px;width: 36%;
-        height: 700px;background-position: 0 0;background-repeat: no-repeat;background-size: contain;
-        background-image: url(../images/apply_right_walk.png);}
-    .walk_img>.apply_right_img_txt_01 {position: absolute;left: 0;bottom: 0;display: inline-block;width: 40%;
-        height: 700px;text-align: right;padding: 60px;}
+    .apply_right_walk {position: absolute;bottom: 130px;right: 0;display: inline-block;text-indent: -9999px;width: 36%; height: 700px;background-position: 0 0;background-repeat: no-repeat;background-size: contain; background-image: url(../images/apply_right_walk.png);}
+    .walk_img>.apply_right_img_txt_01 {position: absolute;left: 0;bottom: 0;display: inline-block;width: 40%; height: 700px;text-align: right;padding: 60px;}
 
     /*-----------------------#middle_txt-----------------------*/
     #middle_txt {display: block;width: 100%;padding: 0;}
@@ -195,20 +165,17 @@
     /*-----------------------#dogshow-----------------------*/
 
     #dogshow {display: flex;flex-flow: row nowrap;justify-content: space-between;width: 100%;}
-    .dogshow_bg {position: relative;display: block;width: 50vw;height: 450px;background-position: 0 0;
-        background-repeat: no-repeat;background-size: contain; background-image: url(../images/fly_dog.png);}
+    .dogshow_bg {position: relative;display: block;width: 50vw;height: 450px;background-position: 0 0; background-repeat: no-repeat;background-size: contain; background-image: url(../images/fly_dog.png);}
     .dogshow_wrap {width: 45%;height: 331px;}
     .dogshow_txt {width: 100%;height: 220px;}
     .dogshow_txt>span {display: block;}
-    .dogshow_txt>span:first-child {width: 100%;padding-top: 10%;font-size: 4rem;font-weight: bold;
-        font-family: 'Open Sans', sans-serif;text-shadow: 30px 30px 0px #918e8e, 80px 80px 0px #b5b2b2;}
+    .dogshow_txt>span:first-child {width: 100%;padding-top: 10%;font-size: 4rem;font-weight: bold; font-family: 'Open Sans', sans-serif;text-shadow: 30px 30px 0px #918e8e, 80px 80px 0px #b5b2b2;}
     .dogshow_txt>span:last-child {font-size: 1.5rem;padding-top: 130px;}
     .df_btn {width: 20%; padding-top: 20%;}
     /*-----------------------#flower-----------------------*/
 
     #flower {width: 100%;padding: 20px 0;}
-    .flower_bg {width: 100%;height: 499px;background-position: center;
-        background-size: contain;background-repeat: no-repeat;background-image: url(../images/flower_bg.png);}
+    .flower_bg {width: 100%;height: 499px;background-position: center; background-size: contain;background-repeat: no-repeat;background-image: url(../images/flower_bg.png);}
     .flower_wrap {float: right;width: 45%;height: 499px;}
     .flower_wrap>.flower_txt {padding-top: 10%;}
     .flower_txt>.flower_bold {display: block;font-weight: bold;font-size: 3rem;padding: 60px 0;}
@@ -217,12 +184,8 @@
 
     /*-----------------------#main_address-----------------------*/
     #main_address {position: relative;width: 100%;}
-
-    .main_gradation {position: relative;display: block;text-indent: -9999px;width: 100%;height: 301px;
-        margin: 50px auto;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/main_gradation.png);}
-
-    .gradation_dog {float: right;text-indent: -9999px;width: 250px;height: 366px;
-        background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/gradation_dog250.png);}
+    .main_gradation {position: relative;display: block;text-indent: -9999px;width: 100%;height: 301px; margin: 50px auto;background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/main_gradation.png);}
+    .gradation_dog {float: right;text-indent: -9999px;width: 250px;height: 366px; background-position: 0 0;background-repeat: no-repeat;background-image: url(../images/gradation_dog250.png);}
 
     .main_add_wrap {position: absolute;top: 0;left: 150px;width: 100%;}
     .infor_add_box {float: left;width: 250px;height: 220px;margin-right: 20px;padding: 40px;}
@@ -238,6 +201,7 @@
 
 /* -----------------------------대형태블릿(769~1280)----------------------------- */
 @media screen and (min-width: 769px) and (max-width: 1280px) {
+    #main_visual {padding-top: 0;}
     /* 대형~중형까지 메인슬라이드 */
     .m_slider {display: block; width: 100vw;}
     #main_notice {display: none;}
@@ -253,7 +217,6 @@
     .more_btn a {display: block; width: 100%; line-height: 40px; color: #fff; font-weight: bold; text-align: center;}
     
     /*-----------------------.m_apply -----------------------*/
-    /* #m_apply {display: flex; justify-content: space-around; width: 90%; margin: 2% auto; margin: 0 auto;} */
     #m_apply {overflow: hidden; display: block; width: 100%; margin: 2% auto; margin: 0 auto;}
     .apply_lft {float: left; width: 40%;padding-left: 8%;}
     .apply_lft div {float: right; background-size: contain; background-position: center; background-repeat: no-repeat;}
@@ -269,19 +232,16 @@
 
     /*-----------------------#middle_txt-----------------------*/
     #middle_txt {width: 100vw; margin: 2.5% auto;}
-    .mydog_samsung_img {display: block;text-indent: -9999px;width: 100vw;height: 400px; background-position: right bottom;
-        background-repeat: no-repeat;background-attachment:local;background-size: cover;background-image: url(../images/m_samsung_txt01.png);}
+    .mydog_samsung_img {display: block;text-indent: -9999px;width: 100vw;height: 400px; background-position: right bottom; background-repeat: no-repeat;background-attachment:local;background-size: cover;background-image: url(../images/m_samsung_txt01.png);}
 
     /*-----------------------#dogshow-----------------------*/
 
     #dogshow {display: flex;flex-flow: row nowrap;justify-content: space-around;width: 100%; margin-bottom: 2%;}
-    .dogshow_bg {display: block;width: 40vw;height: 529px;background-position: center; background-size: contain;
-        background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
+    .dogshow_bg {display: block;width: 40vw;height: 529px;background-position: center; background-size: contain; background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
     .dogshow_wrap {width: 47vw;}
     .dogshow_txt {width: 100%;}
     .dogshow_txt>span {display: block;}
-    .dogshow_txt>span:first-child {width: 100%;padding-top: 23%;font-size: 3rem;font-weight: bold;
-        font-family: 'Roboto', sans-serif; text-shadow: none;}
+    .dogshow_txt>span:first-child {width: 100%;padding-top: 23%;font-size: 3rem;font-weight: bold; font-family: 'Roboto', sans-serif; text-shadow: none;}
     .dogshow_txt>span:last-child {display: inline-block; width: 57%; line-height: 1.2; font-size: 1.5rem;padding-top: 90px;}
     .df_btn {width: 20%; padding-top: 35%;}
     .df_btn>a {display: block;width: 100%;height: 34px;line-height: 34px;text-align: center;border: 2px solid #000;}
@@ -290,8 +250,7 @@
 
     #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%;padding: 0; margin-bottom: 7%;}
     .flower_bg {display: none;}
-    .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 529px;background-position: center;
-        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.png);}
+    .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 529px;background-position: center; background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.png);}
     .remember_wrap {float: none;display: block; width: 47%;}
     .remember_txt {width: 100%; padding-top: 0;}
     .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 3rem;padding-top: 23%;}
@@ -314,13 +273,11 @@
     .address_sub_txt {display: block;font-size: 1rem;margin-bottom: 26px;line-height: 2;}
 }
 
-
-
-
 /* -----------------------------중형태블릿(415~768)----------------------------- */
 @media screen and (min-width: 415px) and (max-width: 768px) {
+    #main_visual {padding-top: 0;}
     /* 대형~중형까지 메인슬라이드 */
-    .m_slider {display: block; width: 100vw;}
+    .m_slider {overflow:hidden; display: block; width: 100vw;}
     #main_notice {display: none;}
     #mydog_apply {display: none;}
 
@@ -337,7 +294,7 @@
     #m_apply {overflow: hidden; display: block; width: 100%; margin: 2% auto; margin: 0 auto;}
     .apply_lft {float: left; width: 40%;padding-left: 8%;}
     .apply_lft div {float: right; background-size: contain; background-position: center; background-repeat: no-repeat;}
-    .apply_lft div a {display: block; width: 100%; text-indent: -9999px;}
+    .apply_lft div a {display: block; width: 100%; height: auto; text-indent: -9999px;}
     .apply_lft00 {width: 36vw; height: 25vw;margin-bottom: 8.5%; background-image: url(../images/apply_lft00.png);}
     .apply_lft01 {width: 36vw; height: 50vw;background-image: url(../images/apply_lft01.png);}
 
@@ -349,19 +306,15 @@
 
     /*-----------------------#middle_txt-----------------------*/
     #middle_txt {width: 100vw; margin: 2.5% auto;}
-    .mydog_samsung_img {display: block;text-indent: -9999px;width: 100vw;height: 30vh; background-position: right bottom;
-        background-repeat: no-repeat;background-attachment:local;background-size: cover;background-image: url(../images/m_samsung_txt01.png);}
+    .mydog_samsung_img {display: block;text-indent: -9999px;width: 100vw;height: 30vh; background-position: right bottom; background-repeat: no-repeat;background-attachment:local;background-size: cover;background-image: url(../images/m_samsung_txt01.png);}
 
     /*-----------------------#dogshow-----------------------*/
-
     #dogshow {display: flex;flex-flow: row nowrap;justify-content: space-around;width: 100%; margin-bottom: 2%;}
-    .dogshow_bg {display: block;width: 40vw;height: 40vh;background-position: center; background-size: contain;
-        background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
+    .dogshow_bg {display: block;width: 40vw;height: 40vh;background-position: center; background-size: contain; background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
     .dogshow_wrap {width: 47vw;}
     .dogshow_txt {width: 100%;}
     .dogshow_txt>span {display: block;}
-    .dogshow_txt>span:first-child {width: 100%;padding-top: 8%;font-size: 3rem;font-weight: bold;
-        font-family: 'Roboto', sans-serif; text-shadow: none;}
+    .dogshow_txt>span:first-child {width: 100%;padding-top: 8%;font-size: 3rem;font-weight: bold; font-family: 'Roboto', sans-serif; text-shadow: none;}
     .dogshow_txt>span:last-child {display: inline-block; width: 60%; line-height: 1.2; font-size: 1.2rem;padding-top: 90px;}
     .df_btn {width: 24%; padding-top: 12%;}
     .df_btn>a {display: block;width: 100%;height: 34px;line-height: 34px;text-align: center;border: 2px solid #000;}
@@ -370,8 +323,7 @@
 
     #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%;height: auto;padding: 0; margin-bottom: 7%;}
     .flower_bg {display: none;}
-    .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center;
-        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.png);}
+    .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center; background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.png);}
     .remember_wrap {float: none;display: block; width: 47vw;}
     .remember_txt {width: 100%; padding-top: 0;}
     .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 3rem;padding-top: 8%;}
@@ -411,26 +363,24 @@
     #m_apply {overflow: hidden; display: block; width: 100%; margin: 2% auto; margin: 0 auto;}
     .apply_lft {float: left; width: 40%;padding-left: 8.5%;}
     .apply_lft div {float: right; background-size: contain; background-position: center; background-repeat: no-repeat;}
-    .apply_lft div a {display: block; width: 100%; text-indent: -9999px;}
+    .apply_lft div a {display: block; width: 100%; height: 100%; text-indent: -9999px;}
     .apply_lft00 {width: 36vw; height: 25vw;margin-bottom: 9%; background-image: url(../images/apply_lft00.png);}
     .apply_lft01 {width: 36vw; height: 50vw;background-image: url(../images/apply_lft01.png);}
 
     .apply_rgt {float: right; width: 40%;padding-right: 8.5%;}
     .apply_rgt div {float: left; background-size: contain; background-position: center; background-repeat: no-repeat;}
-    .apply_rgt div a {display: block; text-indent: -9999px;width: 100%;}
+    .apply_rgt div a {display: block; text-indent: -9999px;width: 100%; height: 100%;}
     .apply_rgt00 {width: 36vw; height: 50vw; margin-bottom: 9%;background-image: url(../images/apply_rgt00.png);}
     .apply_rgt01 {width: 36vw; height: 25vw; background-image: url(../images/apply_rgt01.png);}
 
     /*-----------------------#dogshow-----------------------*/
 
     #dogshow {display: flex;flex-flow: row nowrap;justify-content: space-around;width: 100%; margin-bottom: 0;}
-    .dogshow_bg {display: block;width: 40vw;height: 40vh;background-position: center; background-size: contain;
-        background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
+    .dogshow_bg {display: block;width: 40vw;height: 40vh;background-position: center; background-size: contain; background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
     .dogshow_wrap {width: 54vw;}
     .dogshow_txt {width: 100%;}
     .dogshow_txt>span {display: block;}
-    .dogshow_txt>span:first-child {width: 100%;padding-top: 3%;font-size: 2.8rem;font-weight: bold;
-        font-family: 'Roboto', sans-serif; text-shadow: none;}
+    .dogshow_txt>span:first-child {width: 100%;padding-top: 3%;font-size: 2.8rem;font-weight: bold; font-family: 'Roboto', sans-serif; text-shadow: none;}
     .dogshow_txt>span:last-child {display: inline-block; width: 59%; line-height: 1.2; font-size: 1rem;padding-top: 60px;}
     .df_btn {width: 20%; padding-top: 10%;}
     .df_btn>a {display: block;width: 100%;height: 34px; font-size: 0.8rem; line-height: 34px;text-align: center;border: 1px solid #000;}
@@ -439,8 +389,7 @@
 
     #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%;height: auto; padding: 0; margin-bottom: 2.5%;}
     .flower_bg {display: none;}
-    .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center;
-        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.png);}
+    .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center; background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.png);}
     .remember_wrap {float: none;display: block; width: 50vw;}
     .remember_txt {width: 100%; padding-top: 0;}
     .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 2.8rem;padding-top: 3%;}
@@ -463,8 +412,8 @@
 
 /* -----------------------------세부조정 모바일(415px~532px)----------------------------- */
 @media screen and (max-width: 532px) {
+    #main_visual {padding-top: 0;}
     #main_notice {display: none;}
-
     /* 기업형 숨김, 모바일 #m_mydog_infor 정보란 생성 */
     #mydog_infor {display: none;}
     #m_mydog_infor {display: flex; flex-flow: row wrap; width: 80%; margin: 0 auto;}
@@ -478,13 +427,13 @@
     #m_apply {overflow: hidden; display: block; width: 100%; margin: 2% auto; margin: 0 auto;}
     .apply_lft {float: left; width: 40%;padding-left: 7%;}
     .apply_lft div {float: right; background-size: contain; background-position: center; background-repeat: no-repeat;}
-    .apply_lft div a {display: block; width: 100%; text-indent: -9999px;}
+    .apply_lft div a {display: block; width: 100%; height: 100%;  text-indent: -9999px;}
     .apply_lft00 {width: 36vw; height: 25vw;margin-bottom: 9%; background-image: url(../images/apply_lft00.png);}
     .apply_lft01 {width: 36vw; height: 50vw;background-image: url(../images/apply_lft01.png);}
 
     .apply_rgt {float: right; width: 40%;padding-right: 7%;}
     .apply_rgt div {float: left; background-size: contain; background-position: center; background-repeat: no-repeat;}
-    .apply_rgt div a {display: block; text-indent: -9999px;width: 100%;}
+    .apply_rgt div a {display: block; text-indent: -9999px;width: 100%; height: 100%; }
     .apply_rgt00 {width: 36vw; height: 50vw; margin-bottom: 9%;background-image: url(../images/apply_rgt00.png);}
     .apply_rgt01 {width: 36vw; height: 25vw; background-image: url(../images/apply_rgt01.png);}
 
@@ -496,13 +445,11 @@
     /*-----------------------#dogshow-----------------------*/
 
     #dogshow {display: flex;flex-flow: row nowrap;justify-content: space-around;width: 100%; height: 59vw; margin-bottom: 0;}
-    .dogshow_bg {display: block;width: 40vw;height: 40vh;background-position: center; background-size: contain;
-        background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
+    .dogshow_bg {display: block;width: 40vw;height: 40vh;background-position: center; background-size: contain; background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
     .dogshow_wrap {width: 54vw; height: auto;}
     .dogshow_txt {width: 100%; height: auto;}
     .dogshow_txt>span {display: block;}
-    .dogshow_txt>span:first-child {width: 100%;padding-top: 31%;font-size: 2rem;font-weight: bold;
-        font-family: 'Roboto', sans-serif; text-shadow: none;}
+    .dogshow_txt>span:first-child {width: 100%;padding-top: 31%;font-size: 2rem;font-weight: bold; font-family: 'Roboto', sans-serif; text-shadow: none;}
     .dogshow_txt>span:last-child {display: inline-block; width: 67%; line-height: 1.2; font-size: 0.8rem;padding-top: 30px;}
     .df_btn {width: 30%; padding-top: 13%;}
     .df_btn>a {display: block;width: 100%;height: 34px; font-size: 0.8rem; line-height: 34px;text-align: center;border: 1px solid #000;}
@@ -518,7 +465,6 @@
     .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 2rem;padding-top: 31%;}
     .remember_txt>.remember_normal {display: block;width: 66.52%; line-height: 1.2;font-size: 0.8rem;padding-top: 30px;}
     .remember_btn {width: 30%; padding-top: 13%;}
-
 
     /*-----------------------#main_address-----------------------*/
     #main_address {position: relative;width: 100%; margin-bottom: 2.5%;}
@@ -539,13 +485,10 @@
 
 /* -----------------------------모바일(~414px)----------------------------- */
 @media screen and (max-width: 414px) {
-
     .mobile_slider {overflow: hidden; position: relative;display: block; width: 100vw;}
     .m_slmobile_sliderider>ul.rslides {width: 100vw;}
     .mobile_slider>ul.rslides li {width: 100vw;}
     .mobile_slider>ul.rslides img {display: block; width: 100vw; background-size: cover;}
-
-
 
     #m_mydog_infor {display: flex; flex-flow: row wrap; width: 80%; margin: 10% auto;}
     #m_mydog_infor div {width: 100%; height: 240px; margin-bottom: 2.5%; background-repeat: no-repeat; background-position: center; background-size: contain; }
@@ -555,20 +498,19 @@
     .more_btn {display: block; width: 28%; height: 33px; border: 1px solid #fff; margin-top: 52%;}
     .more_btn a {display: block; width: 100%; line-height: 33px; color: #fff; font-weight: bold; text-align: center;}
 
-
     /*-----------------------.m_apply -----------------------*/
     #mydog_apply {display: none;}
 
     #m_apply {overflow: hidden; display: block; width: 100%; margin: 2% auto; margin: 0 auto;}
     .apply_lft {float: left; width: 40%;padding-left: 6%;}
     .apply_lft div {float: right; background-size: contain; background-position: center; background-repeat: no-repeat;}
-    .apply_lft div a {display: block; width: 100%; text-indent: -9999px;}
+    .apply_lft div a {display: block; width: 100%; height: 100%; text-indent: -9999px;}
     .apply_lft00 {width: 36vw; height: 25vw;margin-bottom: 10%; background-image: url(../images/apply_lft00.png);}
     .apply_lft01 {width: 36vw; height: 50vw;background-image: url(../images/apply_lft01.png);}
 
     .apply_rgt {float: right; width: 40%;padding-right: 6%;}
     .apply_rgt div {float: left; background-size: contain; background-position: center; background-repeat: no-repeat;}
-    .apply_rgt div a {display: block; text-indent: -9999px;width: 100%;}
+    .apply_rgt div a {display: block; text-indent: -9999px;width: 100%; height: 100%; }
     .apply_rgt00 {width: 36vw; height: 50vw; margin-bottom: 10%;background-image: url(../images/apply_rgt00.png);}
     .apply_rgt01 {width: 36vw; height: 25vw; background-image: url(../images/apply_rgt01.png);}
 
@@ -577,30 +519,26 @@
 
     /*-----------------------#dogshow-----------------------*/
 
-    #dogshow {display: flex;flex-flow: row nowrap;justify-content: space-around;width: 100%;margin-bottom: 0;}
-    .dogshow_bg {display: block;width: 40vw;height: 40vh;background-position: center; background-size: contain;
-        background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
+    #dogshow {display: flex;flex-flow: row nowrap;justify-content: space-around;width: 100%; height: 61vw; margin-bottom: 0;}
+    .dogshow_bg {display: block;width: 40vw;background-position: center; background-size: contain; background-repeat: no-repeat;background-image: url(../images/m_dogshow.png);}
     .dogshow_wrap {width: 50vw; height: auto;}
     .dogshow_txt {width: 100%; height: auto;}
     .dogshow_txt>span {display: block;}
-    .dogshow_txt>span:first-child {width: 100%;padding-top: 38%;font-size: 2rem;font-weight: bold;
-        font-family: 'Roboto', sans-serif; text-shadow: none;}
+    .dogshow_txt>span:first-child {width: 100%;padding-top: 38%;font-size: 2rem;font-weight: bold; font-family: 'Roboto', sans-serif; text-shadow: none;}
     .dogshow_txt>span:last-child {display: inline-block; width: 77%; line-height: 1.2; font-size: 0.8rem;padding-top: 30px;}
     .df_btn {width: 30%; padding-top: 13%;}
     .df_btn>a {display: block;width: 100%;height: 30px; font-size: 0.8rem; line-height: 30px;text-align: center;border: 1px solid #000;}
 
     /*-----------------------#flower-----------------------*/
 
-    #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%; height: 71vw; padding: 0; margin-bottom: 5%;}
+    #flower {display: flex;flex-flow: row nowrap;justify-content: space-around; width: 100%; height: 83vw; padding: 0; margin-bottom: 5%;}
     .flower_bg {display: none;}
-    .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center;
-        background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.png);}
+    .remember_bg {display: block; text-indent: -9999px; width: 40%;height: 40vh;background-position: center; background-size: contain;background-repeat: no-repeat;background-image: url(../images/m_remember.png);}
     .remember_wrap {float: none;display: block; width: 50vw;}
     .remember_txt {width: 100%; padding-top: 0;}
     .remember_txt>.remember_bold {display: block;font-weight: bold;font-size: 2rem;padding-top: 38%;}
     .remember_txt>.remember_normal {display: block;width: 77%; line-height: 1.2;font-size: 0.8rem;padding-top: 30px;}
     .remember_btn {width: 30%; padding-top: 13%;}
-
 
     /*-----------------------#main_address-----------------------*/
     .main_gradation {display: none;}

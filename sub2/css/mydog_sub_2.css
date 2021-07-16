@@ -43,6 +43,7 @@
 
 /* sub1_bg */
 .tab_con2 {
+    display: block;
     width: 100%;
     margin: 5% 0;
 }
